@@ -1,0 +1,6 @@
+@use "../../abstract/all" as abs;
+
+footer{
+    height: 507;
+    background-color: abs.$blue-500;
+}

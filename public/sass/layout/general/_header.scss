@@ -1,0 +1,29 @@
+@use "../../abstract/all" as abs;
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120;
+    color: abs.$white-color;
+
+    .logo{
+        height: 50;
+        width: 100;
+        color: cadetblue;
+    }
+
+    .menu-row{
+        display: flex;
+    }
+
+    .menu{
+        margin: 0 20px;
+    }
+    
+    .account-btn{
+        display: flex;
+    }
+}
+

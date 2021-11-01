@@ -1,0 +1,14 @@
+@use "../../abstract/all" as abs;
+
+.benefit-box{
+    display: flex;
+    background-color: abs.$blue-500;
+    color: abs.$white-color;
+    align-items: center;
+
+    img{
+        width: 516px;
+        height: 446px;
+        background-color: abs.$white-color;
+    }
+}

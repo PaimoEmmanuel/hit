@@ -1,0 +1,34 @@
+@use "../../abstract/all" as abs;
+
+.subscribe-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+    padding-top: 148px;
+    margin-top: 40px;
+    background-color: abs.$blue-500;
+    color: abs.$white-color;
+
+
+    .title{
+        font-size: 2em;
+        display: inline-block;
+        text-align: center;
+        
+        // background-color: coral;
+    }
+
+    .desc{
+        text-align: center;
+    }
+
+    .input-box{
+        display: flex;
+        text-align: center;
+    }
+}
+
+.difff{
+    background-color: aqua;
+}

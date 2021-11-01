@@ -1,0 +1,46 @@
+@use "../../abstract/all" as abs;
+
+.landing-bg{
+    height: 672px;
+    background-color: abs.$blue-500;
+}
+
+.landing-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-box {
+    width: 60%;
+    .desc{
+        background-color: abs.$blue-300;
+        color: abs.$white-color;
+        padding: 1.5rem;
+    }
+
+    .types {
+        display: flex;
+        div{
+            background-color: gray;
+            padding: 10px;
+            margin: 10px;
+        }
+        
+    }
+}
+
+.user-box {
+    width: 30%;
+    .user {
+        width: 280px;
+        height: 320px;
+        margin-bottom: 30px;
+        background-color: abs.$blue-100;
+    }
+
+    .comment {
+        width: 280px;
+        height: 108px;
+        background-color: abs.$blue-100;
+    }
+}

@@ -1,0 +1,25 @@
+@use "../../abstract/all" as abs;
+
+.sbs-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 120px;
+    padding-bottom: 80px;
+
+    img{
+        width: 390px;
+        height: 400px;
+        background-color: rgb(171, 188, 197);
+        border-radius: 12px;
+    }
+}
+
+.sbs-box.reverse{
+    flex-direction: row-reverse;
+}
+
+.sbs.text-box{
+    width: 400px;
+}
+
