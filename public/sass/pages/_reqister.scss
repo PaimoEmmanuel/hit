@@ -1,0 +1,9 @@
+@use "../abstract/all" as abs;
+@use "../core/all" as core-all;
+@use "../component/button";
+@use "../layout/general/all" as general-all;
+@use "../layout/auth/auth";
+
+.register-img{
+    background-image: url("../images/register_image.png");
+}

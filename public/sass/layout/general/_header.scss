@@ -7,23 +7,50 @@ header{
     align-items: center;
     height: 120;
     color: abs.$white-color;
+    padding: 0 6%;
 
     .logo{
         height: 50;
-        width: 100;
+        width: 178;
         color: cadetblue;
     }
 
     .menu-row{
-        display: flex;
+        display: none;
+    }
+
+    .sign-up{
+        display: none;
     }
 
     .menu{
-        margin: 0 20px;
+        margin: 0 1.7vw;
+        font-size: 0.9em;
+        color: rgb(235, 235, 235);
     }
     
     .account-btn{
         display: flex;
+    }
+}
+
+
+
+@media (min-width: 702px) {
+    header{
+        padding: 0 6%;
+        .sign-up{
+            display: flex;
+        }
+    }
+}
+
+@media (min-width: 1099px) {
+    header{
+        padding: 0 9%;
+        .menu-row{
+            display: flex;
+        }
     }
 }
 

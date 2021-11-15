@@ -1,25 +1,117 @@
 @use "../../abstract/all" as abs;
 
-.sbs-box{
+.sbs-box {
     display: flex;
-    align-items: center;
+    flex-direction: column-reverse;
     justify-content: center;
-    padding-top: 120px;
-    padding-bottom: 80px;
+    padding-top: 45px;
+    padding-bottom: 30px;
+    padding-left: 6%;
+    padding-right: 6%;
+    position: relative;
 
-    img{
-        width: 390px;
-        height: 400px;
-        background-color: rgb(171, 188, 197);
-        border-radius: 12px;
+    .back {
+        position: absolute;
+        width: 200px;
+        height: 220px;
+        background-color: abs.$back-blue;
+        z-index: -1;
+        top: 80px;
+        right: 0;
+    }
+    //For smaller screen set the image height
+    img {
+        height: 290px;
+        object-fit: cover;
+    }
+
+    .sbs.text-box {
+        .h-32 {
+            height: 22px;
+        }
+    }
+
+    .line {
+        height: 5px;
+        width: 120px;
+        border-radius: 50px;
+        background-color: abs.$accent-color;
+    }
+
+    .title {
+        font-size: 1.7em;
+        color: abs.$dark-text;
+        padding-top: 35px;
+    }
+
+    .desc {
+        color: abs.$light-text;
     }
 }
 
-.sbs-box.reverse{
-    flex-direction: row-reverse;
+.sbs-box.reverse {
+    .back {
+        right: unset;
+        left: 0;
+    }
 }
 
-.sbs.text-box{
-    width: 400px;
+@media (min-width: 700px) {
+    .sbs-box {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
 }
 
+@media (min-width: 846px) {
+    .sbs-box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-top: 120px;
+        padding-bottom: 80px;
+        padding-left: 9%;
+        padding-right: 9%;
+
+        img {
+            width: 390px;
+            height: auto;
+            border-radius: 12px;
+        }
+
+        .back {
+            position: absolute;
+            width: 320px;
+            height: 300px;
+            background-color: abs.$back-blue;
+            z-index: -1;
+            top: 170px;
+            right: 0;
+        }
+
+        .title {
+            padding-top: 0;
+            font-size: 2.3em;
+        }
+    }
+
+    .sbs.text-box {
+        width: 400px;
+    }
+
+    .sbs-box.reverse {
+        flex-direction: row-reverse;
+
+        .back {
+            right: unset;
+            left: 0;
+        }
+    }
+}
+
+@media (min-width: 1100px) {
+    .sbs-box {
+        padding-left: 13%;
+        padding-right: 13%;
+    }
+}

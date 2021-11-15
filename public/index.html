@@ -18,23 +18,30 @@
 </head>
 
 <body>
-    <div class="general-margin landing-bg">
+    <div class="landing-bg">
         <header class="home-header">
-            <div class="logo"></div>
-            <div class="menu-row">
-                <div class="menu home">home</div>
+            <!-- <div class="logo" ></div> -->
+            <img src="./images/logo.png" alt="logo">
+            <div class="menu-row f-we-300">
+                <div class="menu home">Home</div>
                 <div class="menu scholarship">Scholarship Type</div>
                 <div class="menu about">About Us</div>
                 <div class="menu events">Events and Info</div>
             </div>
-            <div class="search">search</div>
+            <!-- <div class="search"></div> -->
             <div class="account-btn">
-                <button class="sign-up">Sign Up</button>
-                <button class="sign-in">Sign In</button>
+                <a href="./register.html">
+                    <button class="sign-up btn border">Sign Up</button>
+                </a>
+                <div class="w-24"></div>
+
+                <a href="./login.html">
+                    <button class="sign-in btn solid">Sign In</button>
+                </a>
             </div>
         </header>
         <div class="h-32"></div>
-        <div class="landing-content">
+        <div class="general-margin landing-content">
             <div class="content-box">
                 <div class="h-16"></div>
                 <h1>Seek Knowledge</h1>
@@ -43,28 +50,31 @@
                     Knowledge is power, Information is liberating. Join us now
                 </div>
                 <div class="h-64"></div>
-                <button class="sign-up">Get Started for free</button>
-                <div class="h-64"></div>
-                <div class="types">
-                    <div>Engineering</div>
-                    <div>Science</div>
-                    <div>Java</div>
+                <button class="btn solid space">Get Started for free</button>
+                <div class="small-hide">
+                    <div class="h-64"></div>
+                    <div class="landing types">
+                        <div class="type">Engineering</div>
+                        <div class="type">Science</div>
+                        <div class="type">Java</div>
+                    </div>
                 </div>
             </div>
-            <div></div>
             <div class="user-box">
-                <div class="user"></div>
+                <!-- <div class="user"></div> -->
+                <img class="user" src="./images/landing_user.png" alt="user">
                 <div class="comment"></div>
             </div>
+
         </div>
     </div>
     <div class="marg"></div>
     <div>
         <div class="general-margin mission-box">
             <h2 class="mission-text">Our Mission</h2>
-            <div class="h-48"></div>
+            <div class="h-56"></div>
             <div class="all-mission">
-                <div class="mission item">
+                <div class="mission item odd">
                     <div class="circle outer">
                         <div class="circle inner"></div>
                     </div>
@@ -84,8 +94,8 @@
                     <div class="mission desc">This is the description for the latest skills to learn</div>
                 </div>
                 <div class="w-per-4"></div>
-                <div class="mission item">
-                    <div class="circle outer">
+                <div class="mission item odd">
+                    <div class="circle outer odd">
                         <div class="circle inner"></div>
                     </div>
                     <div class="h-24"></div>
@@ -106,69 +116,137 @@
             </div>
         </div>
         <div class="general-margin sbs-box">
+            <div class="sbs back"></div>
             <div class="sbs text-box">
-                <h3 class="sbs title">Title</h3>
+                <h3 class="sbs title">Objectives</h3>
+                <div class="sbs line"></div>
+                <div class="h-32"></div>
                 <div class="sbs desc">Start streaming on-demand video lectures
                     today from top instructors in subjects like
                     business, computer science, data science,
                     language learning, & more.</div>
             </div>
             <div class="w-per-10"></div>
-            <img src="" alt="">
+            <img src="./images/objectives.png" alt="arrow objectives">
         </div>
         <div class="general-margin sbs-box reverse">
+            <div class="sbs back"></div>
             <div class="sbs text-box">
-                <h3 class="sbs title">Title</h3>
+                <h3 class="sbs title">Core values</h3>
+                <div class="sbs line"></div>
+                <div class="h-32"></div>
                 <div class="sbs desc">Start streaming on-demand video lectures
                     today from top instructors in subjects like
                     business, computer science, data science,
                     language learning, & more.</div>
             </div>
             <div class="w-per-10"></div>
-            <img src="" alt="">
+            <img src="./images/core_values.png" alt="values">
         </div>
         <div class="general-margin subscribe-box">
             <h2 class="subscribe title">Subscribe to Our Newsletter <br>
                 For Weekly Article Update.</h2>
             <div class="h-48"></div>
-            <div class="subscribe desc">We have estate-related blog so we can share our thought and rutinity <br> in our blog
+            <div class="subscribe desc">We have estate-related blog so we can share our thought and rutinity <br> in our
+                blog
                 that updated weekly. We will not spam you, we promise.</div>
             <div class="h-64"></div>
             <div class="subscribe input-box">
                 <i class="email"></i>
-                <input type="email" name="" id="">
-                <button>Subscribe</button>
+                <!-- <input type="email" id="email-input" placeholder="Enter your e-mail adress"> -->
+                <button class="btn solid space">Subscribe</button>
             </div>
         </div>
         <div class="general-margin feedback-box">
-            <h2 class="feedback title">This is What Our Clients Said!</h2>
-            <div class="marg"></div>
+            <h2 class="feedback title">This is What Our <br> Clients Said!</h2>
+            <div class="h-64"></div>
             <div class="all-feedback">
                 <div class="feedback item">
-                    <img src="" alt="" class="quote">
+                    <!-- <img src="./images/quote.png" alt="quote" class="quote"> -->
+                    <div class="quote"></div>
+                    <div class="h-32"></div>
                     <div class="feedback desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur</div>
+                    <div class="h-16"></div>
                     <div class="feedback client-name">Katie Simpson</div>
                 </div>
+                <div class="feedback item">
+                    <!-- <img src="./images/quote.png" alt="quote" class="quote"> -->
+                    <div class="quote"></div>
+                    <div class="h-32"></div>
+                    <div class="feedback desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur</div>
+                    <div class="h-16"></div>
+                    <div class="feedback client-name">Katie Simpson</div>
+                </div>
+                <div class="feedback item">
+                    <!-- <img src="./images/quote.png" alt="quote" class="quote"> -->
+                    <div class="quote"></div>
+                    <div class="h-32"></div>
+                    <div class="feedback desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur</div>
+                    <div class="h-16"></div>
+                    <div class="feedback client-name">Katie Simpson</div>
+                </div>
+                <div class="feedback item">
+                    <!-- <img src="./images/quote.png" alt="quote" class="quote"> -->
+                    <div class="quote"></div>
+                    <div class="h-32"></div>
+                    <div class="feedback desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur</div>
+                    <div class="h-16"></div>
+                    <div class="feedback client-name">Katie Simpson</div>
+                </div>
+                <div class="feedback item">
+                    <!-- <img src="./images/quote.png" alt="quote" class="quote"> -->
+                    <div class="quote"></div>
+                    <div class="h-32"></div>
+                    <div class="feedback desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur</div>
+                    <div class="h-16"></div>
+                    <div class="feedback client-name">Katie Simpson</div>
+                </div>
+                <div class="feedback item">
+                    <!-- <img src="./images/quote.png" alt="quote" class="quote"> -->
+                    <div class="quote"></div>
+                    <div class="h-32"></div>
+                    <div class="feedback desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur</div>
+                    <div class="h-16"></div>
+                    <div class="feedback client-name">Katie Simpson</div>
+                </div>
+
             </div>
         </div>
+
         <div class="general-margin benefit-box">
             <div class="text-box">
-                <h3 class="benefit">Students Benefit</h3>
-                <div class="benefit text">We have estate-related blog so we can share our thought and rutinity in our
-                    blog that updated weekly. We will not spam you, we promise.
+                <h3 class="benefit title">Students Benefits</h3>
+                <div class="h-24"></div>
+                <div class="benefit text">We have estate-related blog so we can share <br> our thought and rutinity in
+                    our
+                    blog that <br> updated weekly. We will not spam you, we <br> promise.
+                    Lorem Ipsulm <br>
+                    Lorem Ipsulm <br>
                     Lorem Ipsulm
-                    Lorem Ipsulm
-                    Lorem Ipsulm</div>
-                <button>Get Started</button>
+                </div>
+                <div class="h-32"></div>
+                <button class="btn solid space">Get Started</button>
             </div>
-            <img src="" alt="" class="benefit">
+            <div class="w-32"></div>
+            <div class="img-wrapper">
+                <img src="./images/benefits.png" alt="benefit images" class="benefit">
+            </div>
         </div>
+        <div class="h-32"></div>
         <div class="general-margin sponsors-box">
-            <h3 class="sponsors title">Trusted By More Than 100 Sponsors</h3>
+            <h3 class="sponsors title">Trusted By More <br> Than 100 Sponsors</h3>
+            <div class="h-80"></div>
             <div class="sponsor logos"></div>
+            <div class="h-32"></div>
             <div class="sponsor logos"></div>
-            <button>Become a Sponsor</button>
+            <div class="h-48"></div>
+            <button class="btn solid space">Become a Sponsor</button>
         </div>
         <footer>
             <div></div>

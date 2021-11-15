@@ -1,43 +1,103 @@
 @use "../../abstract/all" as abs;
 
-.mission-box{
-    padding-top: 150px;
-    padding-bottom: 110px;
-    .mission-text{
+.mission-box {
+    padding-top: 100px;
+    padding-bottom: 30px;
+    .mission-text {
         text-align: center;
+        font-size: 2em;
+        color: abs.$dark-text;
+        font-weight: 800;
         // background-color: blueviolet;
     }
 
-    .all-mission{
+    .all-mission {
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
 }
 
-.mission.item{
-    width: 192px;
+.mission.item {
+    width: 215px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding-bottom: 40px;
 
-    .circle{
+    .circle {
         border-radius: 50%;
-
     }
 
-    .outer{
-        height: 144px;
-        width: 144px;
+    .outer {
+        height: 135px;
+        width: 135px;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: abs.$accent-color;
+        box-shadow: 0 30px 50px abs.$drop-shadow;
     }
 
-    .inner{
-        height: 64px;
-        width: 64px;
+    .inner {
+        height: 60.5px;
+        width: 60.5px;
         background-color: abs.$white-color;
+    }
+
+    .title {
+        font-size: 1.4em;
+        font-weight: 500;
+        color: abs.$dark-text;
+    }
+
+    .desc {
+        color: abs.$light-text;
+        font-weight: 300;
+    }
+}
+
+.mission.item.odd {
+    .outer {
+        background-color: abs.$blue-100;
+    }
+}
+
+@media (min-width: 602px) {
+    .mission-box {
+        padding-top: 150px;
+        padding-bottom: 80px;
+        .all-mission {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+
+    // .mission.item.odd{
+    //     padding-top: 70px;
+    // }
+}
+
+@media (min-width: 846px) {
+    .mission-box {
+        
+        .all-mission {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            
+        align-items: unset;
+        }
+    }
+
+    .mission.item {
+        padding-top: unset;
+    }
+
+    .mission.item.odd {
+        padding-top: 70px;
     }
 }

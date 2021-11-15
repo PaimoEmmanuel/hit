@@ -1,57 +1,94 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="./sass/auth.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
     <title>Document</title>
 </head>
+
 <body>
-    <div>
-        <img src="" alt="">
-        <div>
-            <div class="marg"></div>
+    <div class="holder">
+        <div class="auth-img fixed register-img"></div>
+        <div class="auth-img"></div>
+        <form class="auth-box">
+            <div class="h-140"></div>
             <div>
                 <div class="marg"></div>
-                <h2 class="sign-in">Sign Up</h2>
-                <div>
-                    <div class="google"></div>
-                    <div class="facebook"></div>
+                <h2 class="title sign-in">Create your account</h2>
+                <div class="h-40"></div>
+                <div class="social-box">
+                    <button type="button" class="social-btn google">
+                        <img src="./images/google.svg" alt="">
+                        <div class="w-16"></div>
+                        <div class="text">Sign up with google</div>
+                    </button>
+                    <div class="w-32"></div>
+                    <div class="h-24"></div>
+                    <button type="button" class="social-btn facebook">
+                        <img src="./images/facebook.svg" alt="">
+                        <div class="w-16"></div>
+                        <div class="text">Sign up with facebook</div>
+                    </button>
                 </div>
-                <h6 class="or-text">Or sign in using email adress</h6>
-                <div>
-                    <div class="input-label-box">
-                        <label>Name</label>
-                        <input type="text" name="name" id="">
+                <div class="h-56"></div>
+                <div class="line"></div>
+                <div class="h-8"></div>
+                <div class="or-text">Or sign up using email adress</div>
+                <div class="h-32"></div>
+                <div class="form-box-holder">
+                    <div class="form-box one">
+                        <div class="input-label-box">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" placeholder="Full Name">
+                        </div>
+                        <div class="h-24"></div>
+                        <div class="input-label-box">
+                            <label for="email">Your email</label>
+                            <input type="email" name="email" id="email" placeholder="Joe@example.com">
+                        </div>
                     </div>
-                    <div class="input-label-box">
-                        <label>User Name</label>
-                        <input type="text" name="password" id="">
+                    <div class="w-32"></div>
+                    <div class="h-24"></div>
+                    <div class="form-box two">
+                        <div class="input-label-box">
+                            <label for="username">User Name</label>
+                            <input type="text" name="username" id="username">
+                        </div>
+                        <div class="h-24"></div>
+                        <div class="input-label-box">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password">
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <div class="input-label-box">
-                        <label>Your email</label>
-                        <input type="email" name="email" id="">
-                    </div>
-                    <div class="input-label-box">
-                        <label>Password</label>
-                        <input type="password" name="password" id="">
-                    </div>
-                </div>
-                <div>
-                    <input type="checkbox" name="" id="">
-                    <div>Remember me</div>
-                    <div>Forgot password?</div>
-                </div>
-                <button>Sign In</button>
             </div>
-            <div class="marg"></div>
-        </div>
+            <div class="h-16"></div>
+            <div class="rm-forgot-box">
+                <div class="checkbox-holder">
+                    <input type="checkbox" name="check" id="check">
+                    <div class="w-8"></div>
+                    <label for="check" class="check">I accept the terms and condition</label>
+                </div>
+                <div class="w-32 hide-space"></div>
+                <div class="res-w"></div>
+                <!-- <div>Forgot password?</div> -->
+            </div>
+            <div class="h-40"></div>
+            <button type="submit">Sign In</button>
+            <div class="h-32"></div>
     </div>
-    
+    </div>
+
 </body>
+
 </html>

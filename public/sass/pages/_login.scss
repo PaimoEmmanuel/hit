@@ -1,0 +1,10 @@
+@use "../abstract/all" as abs;
+@use "../core/all" as core-all;
+@use "../component/button";
+@use "../component/input";
+@use "../layout/general/all" as general-all;
+@use "../layout/auth/auth";
+
+.login-img{
+    background-image: url("../images/login_image.png");
+}

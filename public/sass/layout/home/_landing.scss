@@ -1,46 +1,91 @@
 @use "../../abstract/all" as abs;
 
 .landing-bg{
-    height: 672px;
+    // height: 672px;
     background-color: abs.$blue-500;
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .landing-content {
     display: flex;
     justify-content: space-between;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom: 70px;
 }
 
 .content-box {
-    width: 60%;
+    width: 90%;
     .desc{
         background-color: abs.$blue-300;
-        color: abs.$white-color;
+        color: rgb(241, 241, 241);
         padding: 1.5rem;
+        font-size: 1.1em;
+    }
+
+    .small-hide{
+        display: none;
     }
 
     .types {
         display: flex;
         div{
-            background-color: gray;
-            padding: 10px;
-            margin: 10px;
+            background-color: abs.$types-blue;
+            padding: 0.9rem 1.7rem;
+            margin-right: 14px;
+            margin-bottom: 14px;
+            border-radius: 8px;
+            color: abs.$white-color;
         }
         
     }
 }
 
-.user-box {
-    width: 30%;
-    .user {
-        width: 280px;
-        height: 320px;
-        margin-bottom: 30px;
-        background-color: abs.$blue-100;
+.user-box{
+    display: none;
+}
+
+@media (min-width: 846px) {
+    .landing-bg{
+        padding: 0;
     }
 
-    .comment {
-        width: 280px;
-        height: 108px;
-        background-color: abs.$blue-100;
+    .landing-content {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .content-box {
+        width: 60%;
+
+        .small-hide{
+            display: block;
+        }
+    }
+
+    .user-box {
+        display: block;
+
+        .user {
+            width: 263px;
+            height: auto;
+            margin-bottom: 30px;
+        }
+    
+        .comment {
+            width: 263px;
+            height: 101px;
+            background-color: abs.$blue-100;
+            border-radius: 5px;
+        }
+    }
+}
+
+@media (min-width: 1100px) {
+    .landing-content{
+        padding-left: 13%;
+        padding-right: 13%;
     }
 }

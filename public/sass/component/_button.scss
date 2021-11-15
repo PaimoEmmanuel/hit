@@ -1,0 +1,56 @@
+@use "../abstract/all" as abs;
+
+.btn{
+    background-color: transparent;
+    padding: 0.8rem 1.7rem;
+    border-radius: 300px;
+    border: 0;
+    font-weight: 600;
+}
+
+.solid{
+    background-color: abs.$accent-color;
+    color: abs.$white-color;
+}
+
+.border{
+    border: 1.5px solid abs.$white-color;
+    color: abs.$white-color;
+}
+
+.space{
+    padding: 1.2rem 2.9rem;
+    font-size: 0.9em;
+    box-shadow: 3px 6px 30px rgba(0, 0, 0, 0.213);
+}
+
+.social-btn{
+    background-color: white;
+    padding: 0.9rem 2.7rem;
+    border-radius: 20px;
+    border: 0;
+    font-weight: 600;
+    display: flex;  
+    align-items: center; 
+    font-size: 0.9em;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.11);
+}
+
+.google{
+    background-color: abs.$blue-100;
+    color: abs.$white-color;
+}
+
+.facebook{
+    color: abs.$light-text;
+}
+
+button[type="submit"] {
+    padding: 1rem 8rem;
+    border-radius: 20px;
+    border: 0;
+    font-weight: 600;
+    background-color: abs.$accent-color;
+    color: abs.$white-color;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.11);
+}

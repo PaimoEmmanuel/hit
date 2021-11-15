@@ -1,30 +1,64 @@
 @use "../../abstract/all" as abs;
 
 .feedback-box{
+    padding-top: 109px;
+    padding-bottom: 109px;
+
     .title{
         text-align: center;
+        color: abs.$dark-text;
+        font-size: 2.0em;
+        font-weight: 800;
+        
     }
 }
 
 .all-feedback{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 } 
 
 
 .feedback.item{
-    height: 276px;
-    width: 296px;
-    background-color: burlywood;
+    height: 278px;
+    width: 274px;
+    background-color: abs.$white-color;
     border-radius: 10px;
     position: relative;
+    padding: 18px;
+    margin: 0px 15px 50px;
+    box-shadow: 0 20px 60px abs.$drop-shadow;
 
-    img{
-        height: 40px;
-        width: 40px;
-        background-color: abs.$blue-100;
-        position: relative;
-        top: -20px;
-        left: 10px;
+    .quote{
+        height: 36px;
+        width: 47px;
+        position: absolute;
+        top: -15px;
+        left: 20px;
+        background-image: url("../images/quote.png");
+        background-repeat: no-repeat;
     }
+
+    .desc{
+        color: abs.$light-text;
+
+    }
+
+    .client-name{
+        color: abs.$accent-color;
+        font-weight: 600;
+        
+    }
+}
+
+@media (min-width: 846px) {
+    .feedback-box{
+    
+        .title{
+            font-size: 2.5em; 
+        }
+    }
+    
 }
