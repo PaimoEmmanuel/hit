@@ -1,0 +1,44 @@
+@use "../../abstract/all" as abs;
+
+.join-hit{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+
+    img{
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .small-sc-title{
+        display: block;
+        margin-bottom: 56px;
+    }
+}
+
+.speaker-box{
+    flex: 3;
+    
+}
+
+.visitors-box{
+    flex: 2.6;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+}
+
+@media (min-width: 858px) {
+    .join-hit{
+        flex-direction: row;
+
+        .small-sc-title{
+            display: none;
+        }
+    }
+
+   .visitors-box{
+       display: flex;
+   }
+}

@@ -1,6 +1,106 @@
 @use "../../abstract/all" as abs;
 
-footer{
-    height: 507;
+footer {
     background-color: abs.$blue-500;
+}
+
+.footer-element {
+    display: flex;
+    // justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    padding: 0px 7% 40px 7%;
+
+    .footer-box {
+        width: 100%;
+        margin: 85px 0 0 0;
+    }
+
+    img {
+        align-self: center;
+    }
+
+    .vline {
+        display: none;
+        opacity: 0.3;
+        height: 240px;
+        width: 0.1px;
+        background-color: abs.$dark-text;
+        margin: 0 4% 0 2%;
+    }
+}
+
+.footer-box.three {
+    .social-icons,
+    .icon-text {
+        display: flex;
+    }
+
+    .social-icons {
+        align-items: flex-end;
+    }
+
+    .text {
+        color: abs.$footer-dark-text;
+    }
+}
+
+.footer-box.two {
+    li {
+        margin-top: 8px;
+        list-style: none;
+    }
+}
+
+.policy-box {
+    padding: 54px 7% 70px 7%;
+    display: flex;
+
+    .vl-white {
+        height: 20px;
+        width: 0.1px;
+        background-color: rgba(223, 223, 223, 0.385);
+    }
+}
+
+@media (min-width: 910px) {
+    .footer-element {
+        .vline.one {
+            display: block;
+            margin: 0 12% 0 9%;
+        }
+
+        .footer-box{
+            width: 400px;
+        }
+
+        .footer-box.two{
+            width: 200px;
+        }
+    }
+
+    // .footer-box.two {
+    //     margin-right: ;
+    // }
+}
+
+@media (min-width: 1280px) {
+    .footer-element {
+        .vline.one {
+            margin: 0 4% 0 2%;
+        }
+
+        .vline.two {
+            display: block;
+        }
+
+        .footer-box{
+            width: 320px;
+        }
+
+        .footer-box.two{
+            width: 320px;
+        }
+
+    }
 }

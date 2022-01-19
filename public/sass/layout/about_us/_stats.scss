@@ -1,0 +1,16 @@
+.text-stats{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    // justify-content: space-between;
+}
+
+.stats-box{
+    text-align: center;
+    width: 214px;
+    margin: 20px 2.5% 20px 0;
+}
+
+.stats-box.last{
+    margin-left: 0;
+}

@@ -8,14 +8,38 @@
     font-weight: 600;
 }
 
+.btn-no-radius{
+    background-color: transparent;
+    padding: 0.8rem 1.7rem;
+    border: 0;
+    font-weight: 600;
+}
+
+.a-no-deco{
+    text-decoration: none;
+}
+
 .solid{
     background-color: abs.$accent-color;
+    border: 1.5px solid abs.$accent-color;
     color: abs.$white-color;
 }
 
 .border{
     border: 1.5px solid abs.$white-color;
     color: abs.$white-color;
+}
+
+.border-dark{
+    border: 1.5px solid abs.$dark-text;
+    color: abs.$dark-text;
+}
+
+header.white{
+    .border{
+        border: 1.7px solid rgb(168, 168, 168);
+        color: abs.$dark-text;
+    }
 }
 
 .space{

@@ -1,6 +1,6 @@
 @use "../../abstract/all" as abs;
 
-.landing-bg{
+.landing-bg {
     // height: 672px;
     background-color: abs.$blue-500;
     background-image: url("../images/background.png");
@@ -18,20 +18,21 @@
 
 .content-box {
     width: 90%;
-    .desc{
+    .desc {
         background-color: abs.$blue-300;
         color: rgb(241, 241, 241);
         padding: 1.5rem;
         font-size: 1.1em;
+        border-radius: 8px;
     }
 
-    .small-hide{
+    .small-hide {
         display: none;
     }
 
     .types {
         display: flex;
-        div{
+        div {
             background-color: abs.$types-blue;
             padding: 0.9rem 1.7rem;
             margin-right: 14px;
@@ -39,16 +40,55 @@
             border-radius: 8px;
             color: abs.$white-color;
         }
-        
     }
 }
 
-.user-box{
+.user-box {
     display: none;
 }
 
+.front-bg {
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.scholarship-bg {
+    background-image: url("../images/scholarship/scholarship_bg.png");
+}
+
+.about-us-bg {
+    background-image: url("../images/about_us/landing_bg.png");
+}
+
+.event-bg {
+    background-image: url("../images/events/landing_bg.png");
+}
+
+.front-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom: 60px;
+
+    h1.title {
+        font-size: 2.7rem;
+        text-align: center;
+    }
+
+    .desc {
+        width: 100%;
+        text-align: center;
+        color: rgb(241, 241, 241);
+        padding: 1.5rem;
+        font-size: 1.1rem;
+    }
+}
+
 @media (min-width: 846px) {
-    .landing-bg{
+    .landing-bg {
         padding: 0;
     }
 
@@ -60,7 +100,7 @@
     .content-box {
         width: 60%;
 
-        .small-hide{
+        .small-hide {
             display: block;
         }
     }
@@ -73,18 +113,24 @@
             height: auto;
             margin-bottom: 30px;
         }
-    
+
         .comment {
             width: 263px;
             height: 101px;
+            overflow: hidden;
             background-color: abs.$blue-100;
             border-radius: 5px;
+
+            img{
+                width: 100%;
+                object-fit: fills;
+            }
         }
     }
 }
 
 @media (min-width: 1100px) {
-    .landing-content{
+    .landing-content {
         padding-left: 13%;
         padding-right: 13%;
     }

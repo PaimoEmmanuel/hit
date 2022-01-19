@@ -1,0 +1,77 @@
+@use "../../abstract/all" as abs;
+
+.vision-box {
+    background-color: abs.$secondary-color;
+    border: 1px solid transparent;
+
+    .divider{
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.474);
+    }
+}
+
+.vision-item {
+    margin-top: 98px;
+    margin-bottom: 98px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+
+    img {
+        height: 230px;
+        object-fit: cover;
+    }
+
+    .vision {
+        background-color: white;
+        width: 100%;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    .title {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .desc {
+        text-align: center;
+    }
+}
+
+@media (min-width: 747px) {
+    .vision-item {
+        flex-direction: unset;
+
+        .vision{
+            height: 100%;
+        }
+
+        .vision-wrap {
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: unset;
+            width: 540px;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            position: absolute;
+            color: abs.$light-text;
+        }
+
+        img {
+            height: 340px;
+        }
+    }
+
+    .reverse {
+        flex-direction: row-reverse;
+    
+        .vision-wrap {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: unset;
+        }
+    }
+}

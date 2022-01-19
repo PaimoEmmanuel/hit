@@ -1,0 +1,32 @@
+.flex{
+    display: flex;
+}
+
+.cen{
+    justify-content: center;
+}
+
+.btw{
+    justify-content: space-between;
+}
+
+.even{
+    justify-content: space-evenly;
+}
+
+.around{
+    justify-content: space-around;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.col-cen{
+    align-items: center;
+}

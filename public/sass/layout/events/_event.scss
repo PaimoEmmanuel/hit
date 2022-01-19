@@ -1,0 +1,31 @@
+@use "../../abstract/all" as abs;
+
+.event-box{
+    width: 100%;
+    margin: 22px;
+    padding: 22px;
+    background-color: white;
+
+    img{
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .desc-box{
+        height: 72px;
+    }
+}
+
+.video-bg{
+    background-color: rgb(36, 36, 36);
+    height: 500px;
+}
+
+@media (min-width: 765px) {
+    .event-box{
+        width: 286px;
+        margin: 12px;
+        padding: 12px;
+    }
+}
+

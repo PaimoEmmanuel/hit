@@ -1,56 +1,122 @@
 @use "../../abstract/all" as abs;
 
+.header-placeholder {
+    height: 100px;
+}
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 120;
+    height: 100px;
     color: abs.$white-color;
     padding: 0 6%;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    top: 0;
 
-    .logo{
+    .logo {
         height: 50;
         width: 178;
         color: cadetblue;
     }
 
-    .menu-row{
+    .menu-row,
+    .account-btn {
         display: none;
     }
 
-    .sign-up{
-        display: none;
-    }
-
-    .menu{
+    .menu {
         margin: 0 1.7vw;
         font-size: 0.9em;
         color: rgb(235, 235, 235);
+        cursor: default;
+        text-decoration: none;
+
+        .hover-line {
+            height: 2px;
+            width: 0px;
+            margin-top: 1px;
+            background-color: abs.$accent-color;
+            border-radius: 50px;
+            transition: width 0.4s;
+            transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
     }
-    
-    .account-btn{
-        display: flex;
+
+    // .account-btn {
+    //     display: flex;
+    // }
+}
+
+.ham-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .line {
+        margin-top: 3px;
+        margin-bottom: 3px;
+        height: 3px;
+        border-radius: 1px;
+        width: 30px;
+        background-color: white;
+    }
+
+    .three {
+        width: 21px;
     }
 }
 
+.menu:hover {
+    .hover-line {
+        width: 42px;
+    }
+}
 
+header.white {
+    background-color: white;
+    box-shadow: 0 3px 10px rgba(168, 168, 168, 0.171);
+    height: 70px;
+
+    .menu {
+        color: abs.$dark-text;
+    }
+
+    .ham-menu {
+        .line {
+            background-color: rgb(84, 84, 84);
+            border-radius: 1px;
+        }
+    }
+}
 
 @media (min-width: 702px) {
-    header{
+    .header-placeholder {
+        height: 120px;
+    }
+
+    header {
         padding: 0 6%;
-        .sign-up{
-            display: flex;
-        }
+        height: 120px;
+    }
+
+    header.white {
+        height: 80px;
     }
 }
 
-@media (min-width: 1099px) {
-    header{
+@media (min-width: 1150px) {
+    header {
         padding: 0 9%;
-        .menu-row{
+        .menu-row,
+        .account-btn {
             display: flex;
         }
     }
-}
 
+    .ham-menu {
+        display: none;
+    }
+}

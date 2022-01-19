@@ -31,6 +31,21 @@
         }
     }
 
+    ul {
+        list-style-position: inside;
+        list-style: none;
+        margin-left: 19px;
+    }
+
+    ul li::before {
+        content: "\2022";
+        color: abs.$accent-color;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em; /* Also needed for space (tweak if needed) */
+    }
+
     .line {
         height: 5px;
         width: 120px;
@@ -50,6 +65,9 @@
 }
 
 .sbs-box.reverse {
+    display: flex;
+    flex-direction: column-reverse;
+
     .back {
         right: unset;
         left: 0;

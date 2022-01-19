@@ -8,8 +8,7 @@
         text-align: center;
         color: abs.$dark-text;
         font-size: 2.0em;
-        font-weight: 800;
-        
+        font-weight: 800;    
     }
 }
 
@@ -22,14 +21,16 @@
 
 
 .feedback.item{
-    height: 278px;
-    width: 274px;
+    height: 258px;
+    width: 284px;
     background-color: abs.$white-color;
     border-radius: 10px;
     position: relative;
     padding: 18px;
-    margin: 0px 15px 50px;
+    margin: 0px 12px 50px;
     box-shadow: 0 20px 60px abs.$drop-shadow;
+    display: flex;
+    flex-direction: column;
 
     .quote{
         height: 36px;
@@ -46,10 +47,13 @@
 
     }
 
+    .expand{
+        flex-grow: 1;
+    }
+
     .client-name{
         color: abs.$accent-color;
         font-weight: 600;
-        
     }
 }
 

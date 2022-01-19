@@ -17,37 +17,97 @@
     <title>Document</title>
 </head>
 
-<body>
-    <div class="landing-bg">
-        <header class="home-header">
-            <!-- <div class="logo" ></div> -->
-            <img src="./images/logo.png" alt="logo">
-            <div class="menu-row f-we-300">
-                <div class="menu home">Home</div>
-                <div class="menu scholarship">Scholarship Type</div>
-                <div class="menu about">About Us</div>
-                <div class="menu events">Events and Info</div>
+<body >
+    <div class="side-menu">
+        <div class="close">
+            <div class="close-menu" onclick="closeSideMenu()">
+                <div class="line one"></div>
+                <div class="line two"></div>
+            </div> 
+        </div>
+        <div class="menu-column">
+            <a href="./about_us.html" class="menu about">
+                <div>About us</div>
+                <div class="hover-line"></div>
+            </a>
+            <a href="./scholarship.html" class="menu scholarship">
+                <div>Scholarship Type</div>
+                <div class="hover-line"></div>
+            </a>
+            <a href="./events.html" class="menu events">
+                <div>News & Events</div>
+                <div class="hover-line"></div>
+            </a>
+            <div class="menu home">
+                <div>Contact Us</div>
+                <div class="hover-line"></div>
             </div>
-            <!-- <div class="search"></div> -->
+            <div class="h-32"></div>
             <div class="account-btn">
-                <a href="./register.html">
+                <a href="./register.html" class="a-no-deco">
                     <button class="sign-up btn border">Sign Up</button>
                 </a>
                 <div class="w-24"></div>
 
-                <a href="./login.html">
+                <a href="./login.html" class="a-no-deco">
                     <button class="sign-in btn solid">Sign In</button>
                 </a>
+            </div>
+            <div class="h-56"></div>
+
+        </div>
+    </div>
+    <div class="landing-bg">
+        <div class="header-placeholder"></div>
+        <header class="transparent">
+            <a href="./index.html">
+                <img src="./images/logo.png" alt="logo">
+            </a>
+            <div class="menu-row f-we-300">
+                <a href="./about_us.html" class="menu about">
+                    <div>About us</div>
+                    <div class="hover-line"></div>
+                </a>
+                <a href="./scholarship.html" class="menu scholarship">
+                    <div>Scholarship Type</div>
+                    <div class="hover-line"></div>
+                </a>
+                <a href="./events.html" class="menu events">
+                    <div>News & Events</div>
+                    <div class="hover-line"></div>
+                </a>
+                <div class="menu home">
+                    <div>Contact Us</div>
+                    <div class="hover-line"></div>
+                </div>
+
+            </div>
+            <!-- <div class="search"></div> -->
+            <div class="account-btn">
+                <a href="./register.html" class="a-no-deco">
+                    <button class="sign-up btn border">Sign Up</button>
+                </a>
+                <div class="w-24"></div>
+
+                <a href="./login.html" class="a-no-deco">
+                    <button class="sign-in btn solid">Sign In</button>
+                </a>
+            </div>
+            <div class="ham-menu" onclick="openSideMenu(event)">
+                <div class="line one"></div>
+                <div class="line two"></div>
+                <div class="line three"></div>
             </div>
         </header>
         <div class="h-32"></div>
         <div class="general-margin landing-content">
             <div class="content-box">
                 <div class="h-16"></div>
-                <h1>Seek Knowledge</h1>
+                <h1>Knowledge is Power</h1>
                 <div class="h-16"></div>
                 <div class="landing desc">
-                    Knowledge is power, Information is liberating. Join us now
+                    International Students Experience.
+                    Get Ready for the Future You Desire..
                 </div>
                 <div class="h-64"></div>
                 <button class="btn solid space">Get Started for free</button>
@@ -63,7 +123,9 @@
             <div class="user-box">
                 <!-- <div class="user"></div> -->
                 <img class="user" src="./images/landing_user.png" alt="user">
-                <div class="comment"></div>
+                <div class="comment">
+                    <img src="./images/home/map_img.png" alt="">
+                </div>
             </div>
 
         </div>
@@ -79,9 +141,9 @@
                         <div class="circle inner"></div>
                     </div>
                     <div class="h-24"></div>
-                    <h3 class="mission title">Learn The <br> Latest Skills</h3>
+                    <h3 class="mission title">Develop Relevant Skills</h3>
                     <div class="h-16"></div>
-                    <div class="mission desc">This is the description for the latest skills to learn</div>
+                    <div class="mission desc">Broaden your knowledge in the field of your choice.</div>
                 </div>
                 <div class="w-per-4"></div>
                 <div class="mission item">
@@ -91,7 +153,7 @@
                     <div class="h-24"></div>
                     <h3 class="mission title">Get Ready For <br> A Career</h3>
                     <div class="h-16"></div>
-                    <div class="mission desc">This is the description for the latest skills to learn</div>
+                    <div class="mission desc">Start training towards a successful future.</div>
                 </div>
                 <div class="w-per-4"></div>
                 <div class="mission item odd">
@@ -99,9 +161,9 @@
                         <div class="circle inner"></div>
                     </div>
                     <div class="h-24"></div>
-                    <h3 class="mission title">Earn A Certificate <br> Or Degree</h3>
+                    <h3 class="mission title">Earn A Degree</h3>
                     <div class="h-16"></div>
-                    <div class="mission desc">This is the description for the latest skills to learn</div>
+                    <div class="mission desc">Get recognized as a certified professional.</div>
                 </div>
                 <div class="w-per-4"></div>
                 <div class="mission item">
@@ -111,7 +173,7 @@
                     <div class="h-24"></div>
                     <h3 class="mission title">Upskill Your <br> Organization</h3>
                     <div class="h-16"></div>
-                    <div class="mission desc">This is the description for the latest skills to learn</div>
+                    <div class="mission desc">Expand your capabilities for better results.</div>
                 </div>
             </div>
         </div>
@@ -121,10 +183,16 @@
                 <h3 class="sbs title">Objectives</h3>
                 <div class="sbs line"></div>
                 <div class="h-32"></div>
-                <div class="sbs desc">Start streaming on-demand video lectures
-                    today from top instructors in subjects like
-                    business, computer science, data science,
-                    language learning, & more.</div>
+                <div class="sbs desc">
+                    <ul>
+                        <li>Elevate your college experience</li>
+                        <li>Deliver tutorials for better learning</li>
+                        <li>Prepare you for the workplace</li>
+                        <li>Connect you to future employers</li>
+                        <li>Empower you with leadership skills</li>
+                        <li>Encourage philanthropy and great service</li>
+                    </ul>
+                </div>
             </div>
             <div class="w-per-10"></div>
             <img src="./images/objectives.png" alt="arrow objectives">
@@ -135,21 +203,24 @@
                 <h3 class="sbs title">Core values</h3>
                 <div class="sbs line"></div>
                 <div class="h-32"></div>
-                <div class="sbs desc">Start streaming on-demand video lectures
-                    today from top instructors in subjects like
-                    business, computer science, data science,
-                    language learning, & more.</div>
+                <div class="sbs desc">
+                    <ul>
+                        <li>Integrity</li>
+                        <li>Professional Excellence</li>
+                        <li>Trust</li>
+                        <li>Support</li>
+                        <li>Diligence</li>
+                    </ul>
+                </div>
             </div>
             <div class="w-per-10"></div>
             <img src="./images/core_values.png" alt="values">
         </div>
         <div class="general-margin subscribe-box">
-            <h2 class="subscribe title">Subscribe to Our Newsletter <br>
-                For Weekly Article Update.</h2>
+            <h2 class="subscribe title">Subscribe to Our Newsletter</h2>
             <div class="h-48"></div>
-            <div class="subscribe desc">We have estate-related blog so we can share our thought and rutinity <br> in our
-                blog
-                that updated weekly. We will not spam you, we promise.</div>
+            <div class="subscribe desc">Get weekly updates on available opportunities when you sign up to join our
+                mailing list.</div>
             <div class="h-64"></div>
             <div class="subscribe input-box">
                 <i class="email"></i>
@@ -158,62 +229,67 @@
             </div>
         </div>
         <div class="general-margin feedback-box">
-            <h2 class="feedback title">This is What Our <br> Clients Said!</h2>
+            <h2 class="feedback title">HIT INTERNATIONAL STUDENT STORIES</h2>
             <div class="h-64"></div>
             <div class="all-feedback">
                 <div class="feedback item">
                     <!-- <img src="./images/quote.png" alt="quote" class="quote"> -->
                     <div class="quote"></div>
                     <div class="h-32"></div>
-                    <div class="feedback desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur</div>
+                    <div class="feedback desc">Settling into a new school curriculum was difficult, but HIT came to my
+                        rescue.</div>
                     <div class="h-16"></div>
-                    <div class="feedback client-name">Katie Simpson</div>
+                    <div class="expand"></div>
+                    <div class="feedback client-name">Lucy, Chile</div>
                 </div>
                 <div class="feedback item">
                     <!-- <img src="./images/quote.png" alt="quote" class="quote"> -->
                     <div class="quote"></div>
                     <div class="h-32"></div>
-                    <div class="feedback desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur</div>
+                    <div class="feedback desc">I found the MIT tutorial videos very interesting and helpful.</div>
                     <div class="h-16"></div>
-                    <div class="feedback client-name">Katie Simpson</div>
+                    <div class="expand"></div>
+                    <div class="feedback client-name">Charles, Sydney</div>
                 </div>
                 <div class="feedback item">
                     <!-- <img src="./images/quote.png" alt="quote" class="quote"> -->
                     <div class="quote"></div>
                     <div class="h-32"></div>
-                    <div class="feedback desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur</div>
+                    <div class="feedback desc">HIT has been a huge support in helping me gain stability in my studies
+                        since I relocated from Kenya</div>
                     <div class="h-16"></div>
-                    <div class="feedback client-name">Katie Simpson</div>
+                    <div class="expand"></div>
+                    <div class="feedback client-name">Mandy, Kenya.</div>
                 </div>
                 <div class="feedback item">
                     <!-- <img src="./images/quote.png" alt="quote" class="quote"> -->
                     <div class="quote"></div>
                     <div class="h-32"></div>
-                    <div class="feedback desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur</div>
+                    <div class="feedback desc">I got my first internship opportunity through HIT</div>
                     <div class="h-16"></div>
-                    <div class="feedback client-name">Katie Simpson</div>
+                    <div class="expand"></div>
+                    <div class="feedback client-name">Sadiq- Niger Republic.</div>
                 </div>
                 <div class="feedback item">
                     <!-- <img src="./images/quote.png" alt="quote" class="quote"> -->
                     <div class="quote"></div>
                     <div class="h-32"></div>
-                    <div class="feedback desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur</div>
+                    <div class="feedback desc">As an international student studying abroad for the first time,
+                        you need some help to fully understand the school's syllabus. I found that help at HIT
+                    </div>
                     <div class="h-16"></div>
-                    <div class="feedback client-name">Katie Simpson</div>
+                    <div class="expand"></div>
+                    <div class="feedback client-name">John- Ouagadougou.</div>
                 </div>
                 <div class="feedback item">
                     <!-- <img src="./images/quote.png" alt="quote" class="quote"> -->
                     <div class="quote"></div>
                     <div class="h-32"></div>
-                    <div class="feedback desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur</div>
+                    <div class="feedback desc">Joining HIT is one of the best decisions I made since I moved here from
+                        India.</div>
                     <div class="h-16"></div>
-                    <div class="feedback client-name">Katie Simpson</div>
+                    <div class="expand"></div>
+                    <div class="feedback client-name">Imran- India</div>
                 </div>
 
             </div>
@@ -223,12 +299,16 @@
             <div class="text-box">
                 <h3 class="benefit title">Students Benefits</h3>
                 <div class="h-24"></div>
-                <div class="benefit text">We have estate-related blog so we can share <br> our thought and rutinity in
-                    our
-                    blog that <br> updated weekly. We will not spam you, we <br> promise.
-                    Lorem Ipsulm <br>
-                    Lorem Ipsulm <br>
-                    Lorem Ipsulm
+                <div class="benefit text">
+                    <div> HIT ensures excellent learning resources and
+                        skilled guidance tailored towards the needs of every student.
+                    </div>
+                    <div class="h-16"></div>
+                    <ul>
+                        <li>Exceptional tutorial materials</li>
+                        <li>Virtual learning at your own pace</li>
+                        <li>Skill acquisition trainings</li>
+                    </ul>
                 </div>
                 <div class="h-32"></div>
                 <button class="btn solid space">Get Started</button>
@@ -248,11 +328,83 @@
             <div class="h-48"></div>
             <button class="btn solid space">Become a Sponsor</button>
         </div>
+
         <footer>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div class="footer-element white-color">
+                <div class="footer-box one">
+                    <img src="./images/footer/logo_potrait.png" alt="" class="logo-icon">
+                    <div class="desc accent-color">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua.Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.
+                    </div>
+                </div>
+                <div class="vline one"></div>
+                <div class="footer-box two">
+                    <ul class="footer-menu-list">
+                        <li>About us</li>
+                        <li>FAQs</li>
+                        <li>T&C</li>
+                        <li>Privacy policy</li>
+                        <li>HPPA Policy</li>
+                    </ul>
+                </div>
+                <div class="vline two"></div>
+                <div class="footer-box three">
+                    <div class="connect-holder">
+                        <div class="connect-text em1-4 bold-txt">Connect with HIT</div>
+                        <div class="h-24"></div>
+                        <div class="icon-text">
+                            <img src="images/footer/locate.png" alt="" class="icon">
+                            <div class="w-16"></div>
+                            <div class="text">2706 N Buffalo Grove Rd
+                                Arlington Heights, Illinois(IL), 60004</div>
+                        </div>
+                        <div class="h-16"></div>
+                        <div class="icon-text">
+                            <img src="images/footer/call.png" alt="" class="icon">
+                            <div class="w-16"></div>
+                            <div class="text">(847) 749-0143</div>
+                        </div>
+                        <div class="h-16"></div>
+                        <div class="icon-text">
+                            <img src="images/footer/mail.png" alt="" class="icon">
+                            <div class="w-16"></div>
+                            <div class="text">support@HIT.com</div>
+                        </div>
+                        <div class="h-24"></div>
+                        <div class="social-icons">
+                            <img src="images/footer/facebook.png" alt="" class="icon">
+                            <div class="w-24"></div>
+                            <img src="images/footer/instagram.png" alt="" class="icon">
+                            <div class="w-24"></div>
+                            <img src="images/footer/twitter.png" alt="" class="icon">
+                            <div class="w-24"></div>
+                            <img src="images/footer/youtube.png" alt="" class="icon">
+                            <div class="w-24"></div>
+                            <img src="images/footer/linkedin.png" alt="" class="icon">
+                            <div class="w-24"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="policy-box white-color">
+                <div class="terms">Terms & Condition</div>
+                <div class="w-24"></div>
+                <div class="vl-white"></div>
+                <div class="w-24"></div>
+                <div class="privacy">Privacy Policies</div>
+            </div>
         </footer>
+        <!-- 
+        <script>
+            var shortHeight = false;
+        </script> -->
+
+        <script src="./script/base.js"></script>
+        <script src="./script/anim.js"></script>
 </body>
 
 </html>

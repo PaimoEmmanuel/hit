@@ -1,0 +1,77 @@
+@use "../abstract/all" as abs;
+
+.white-color{
+    color: abs.$white-color;
+}
+
+.light-color{
+    color: abs.$light-text;
+}
+
+.dark-color{
+    color: abs.$dark-text;
+}
+
+.accent-color{
+    color: abs.$accent-color;
+}
+
+.em0-9{
+    font-size: 0.9rem;
+}
+
+.em1-{
+    font-size: 1.1rem;
+}
+
+.em1-2{
+    font-size: 1.2rem;
+}
+
+.em1-3{
+    font-size: 1.3rem;
+}
+
+.em1-4{
+    font-size: 1.4rem;
+}
+
+.em1-7{
+    font-size: 1.7rem; 
+}
+
+.em2-0{
+    font-size: 2.0rem; 
+}
+
+.em2-7{
+    font-size: 2.7rem;
+}
+
+.em3-3{
+    font-size: 3.3rem;
+}
+
+.em4-0{
+    font-size: 3.3rem;
+}
+
+.bold-txt{
+    font-weight: bold;
+}
+
+.light-txt{
+    font-weight: 300;
+}
+
+.txt-600{
+    font-weight: 600;
+}
+
+.txt-500{
+    font-weight: 500;
+}
+
+.txt-align-cen{
+    text-align: center;
+}
