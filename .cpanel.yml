@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/harnessi/public_html/
+    - export DEPLOYPATH=/home/harnessi/public_html/public/
     - /bin/cp -R * $DEPLOYPATH
