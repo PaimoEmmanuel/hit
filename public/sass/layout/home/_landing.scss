@@ -1,137 +1,188 @@
 @use "../../abstract/all" as abs;
 
 .landing-bg {
-    // height: 672px;
-    background-color: abs.$blue-500;
-    background-image: url("../images/background.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+  // height: 672px;
+  background-color: abs.$blue-500;
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .landing-content {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 6%;
-    padding-right: 6%;
-    padding-bottom: 70px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-bottom: 70px;
 }
 
 .content-box {
-    width: 90%;
-    .desc {
-        background-color: abs.$blue-300;
-        color: rgb(241, 241, 241);
-        padding: 1.5rem;
-        font-size: 1.1em;
-        border-radius: 8px;
-    }
+  width: 90%;
+  .desc {
+    background-color: abs.$blue-300;
+    color: rgb(241, 241, 241);
+    padding: 1.5rem;
+    font-size: 1.1em;
+    border-radius: 8px;
+  }
 
-    .small-hide {
-        display: none;
-    }
+  .small-hide {
+    display: none;
+  }
 
-    .types {
-        display: flex;
-        div {
-            background-color: abs.$types-blue;
-            padding: 0.9rem 1.7rem;
-            margin-right: 14px;
-            margin-bottom: 14px;
-            border-radius: 8px;
-            color: abs.$white-color;
-        }
+  .types {
+    display: flex;
+    div {
+      background-color: abs.$types-blue;
+      padding: 0.9rem 1.7rem;
+      margin-right: 14px;
+      margin-bottom: 14px;
+      border-radius: 8px;
+      color: abs.$white-color;
     }
+  }
 }
 
 .user-box {
-    display: none;
+  display: none;
 }
 
 .front-bg {
-    background-color: black;
-    background-repeat: no-repeat;
-    background-size: cover;
+  //   background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
 }
 
 .scholarship-bg {
-    background-image: url("../images/scholarship/scholarship_bg.png");
+  // background-image: url("../images/scholarship/scholarship_bg.png");
+  position: absolute;
+  top: 0;
+  display: flex;
+  height: 100%;
+  z-index: -9;
+  width: 100%;
+  img {
+    object-fit: cover;
+    min-width: 100%;
+    width: 100%;
+    height: 100%;
+  }
 }
+.banner-arrow {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-left: 9%;
+  padding-right: 9%;
 
+  .next,
+  .prev {
+    padding: 14px;
+    background-color: #f89318;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .prev {
+    transform: rotate(180deg);
+  }
+}
+.banner-span {
+  position: absolute;
+  bottom: 75px;
+  left: 50%;
+  transform: translateX(-50%);
+  span {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-color: #fff;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+}
 .about-us-bg {
-    background-image: url("../images/about_us/landing_bg.png");
+  background-image: url("../images/about_us/landing_bg.png");
 }
 
 .event-bg {
-    background-image: url("../images/events/landing_bg.png");
+  background-image: url("../images/events/landing_bg.png");
 }
-
+.banner-wrap {
+  width: 300%;
+  transition: all .2s;
+}
 .front-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-left: 6%;
-    padding-right: 6%;
-    padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-bottom: 150px;
+  //   min-width: 100%;
 
-    h1.title {
-        font-size: 2.7rem;
-        text-align: center;
-    }
+  h1.title {
+    font-size: 2.7rem;
+    text-align: center;
+  }
 
-    .desc {
-        width: 100%;
-        text-align: center;
-        color: rgb(241, 241, 241);
-        padding: 1.5rem;
-        font-size: 1.1rem;
-    }
+  .desc {
+    width: 100%;
+    text-align: center;
+    color: rgb(241, 241, 241);
+    padding: 1.5rem;
+    font-size: 1.1rem;
+  }
 }
 
 @media (min-width: 846px) {
-    .landing-bg {
-        padding: 0;
+  .landing-bg {
+    padding: 0;
+  }
+
+  .landing-content {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .content-box {
+    width: 60%;
+
+    .small-hide {
+      display: block;
+    }
+  }
+
+  .user-box {
+    display: block;
+
+    .user {
+      width: 263px;
+      height: auto;
+      margin-bottom: 30px;
     }
 
-    .landing-content {
-        padding-left: 6%;
-        padding-right: 6%;
+    .comment {
+      width: 263px;
+      height: 101px;
+      overflow: hidden;
+      background-color: abs.$blue-100;
+      border-radius: 5px;
+
+      img {
+        width: 100%;
+        object-fit: fills;
+      }
     }
-
-    .content-box {
-        width: 60%;
-
-        .small-hide {
-            display: block;
-        }
-    }
-
-    .user-box {
-        display: block;
-
-        .user {
-            width: 263px;
-            height: auto;
-            margin-bottom: 30px;
-        }
-
-        .comment {
-            width: 263px;
-            height: 101px;
-            overflow: hidden;
-            background-color: abs.$blue-100;
-            border-radius: 5px;
-
-            img{
-                width: 100%;
-                object-fit: fills;
-            }
-        }
-    }
+  }
 }
 
 @media (min-width: 1100px) {
-    .landing-content {
-        padding-left: 13%;
-        padding-right: 13%;
-    }
+  .landing-content {
+    padding-left: 13%;
+    padding-right: 13%;
+  }
 }

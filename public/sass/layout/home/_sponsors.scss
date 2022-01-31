@@ -1,20 +1,26 @@
 @use "../../abstract/all" as abs;
 
-.sponsors-box{
-    background-color: abs.$blue-100;
-    padding-top: 102px;
-    padding-bottom: 70px;
+.sponsors {
+  background-color: white;
+  padding-top: 102px;
+  padding-bottom: 58px;
+  margin-bottom: 6px;
 
-    .title{
-        color: abs.$white-color;
-        font-size: 2.5em;
-        font-weight: 800;
-    }
+  .title {
+    color: #463d80;
+    font-size: 2.5em;
+    font-weight: 800;
+  }
 
-    .logos{
-        width: 100%;
-        height: 100px;
-        margin: 10px;
-        background-image: url("../images/sponsors.png");
+  .logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-bottom: 53px;
+    img {
+      min-width: 200px;
+      max-width: 200px;
     }
+  }
 }

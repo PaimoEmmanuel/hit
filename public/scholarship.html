@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="shortcut icon" href="/public/images/android-chrome-192x192.png" type="image/x-icon">
 
-    
     <link rel="stylesheet" href="sass/app.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +24,7 @@
             <div class="close-menu" onclick="closeSideMenu()">
                 <div class="line one"></div>
                 <div class="line two"></div>
-            </div> 
+            </div>
         </div>
         <div class="menu-column">
             <a href="./about_us.html" class="menu about">
@@ -58,7 +58,30 @@
 
         </div>
     </div>
-    <div class="front-bg scholarship-bg">
+    <div class="front-bg">
+        <div class="banner-arrow">
+            <div class="prev">
+                <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 10.867L0 21.1912L5 10.867L0 0.542725L20 10.867Z" fill="white" />
+                </svg>
+            </div>
+            <div class="next">
+                <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 10.867L0 21.1912L5 10.867L0 0.542725L20 10.867Z" fill="white" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="banner-span">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="scholarship-bg">
+            <!-- <img src="/public/images/scholarship/scholarship_bg.png" alt=""> -->
+            <!-- <img src="/public/images/scholarship/image1.png" alt="">
+            <img src="/public/images/scholarship/image2.png" alt=""> -->
+        </div>
         <div class="header-placeholder"></div>
         <header class="transparent">
             <a href="./index.html">
@@ -100,16 +123,48 @@
             </div>
         </header>
         <div class="h-32"></div>
-        <div class="general-margin front-content">
-            <div class="h-16"></div>
-            <h1 class="title">Academic <br>Scholarships</h1>
-            <div class="h-8"></div>
-            <div class="landing desc">Find funding for your degree program.
-                 Create a profile to get matched to scholarships you are eligible for.
+        <div class="flex banner-wrap">
+            <div class="general-margin front-content">
+                <div class="scholarship-bg">
+                    <img src="/public/images/scholarship/scholarship_bg.png" alt="">
+                </div>
+                <div class="h-16"></div>
+                <h1 class="title">Academic <br>Scholarships</h1>
+                <div class="h-8"></div>
+                <div class="landing desc">Find funding for your degree program.
+                    Create a profile to get matched to scholarships you are eligible for.
+                </div>
+                <div class="h-40"></div>
+                <button class="btn solid space">Create Profile Now</button>
             </div>
-            <div class="h-40"></div>
-            <button class="btn solid space">Create Profile Now</button>
+            <div class="general-margin front-content">
+                <div class="scholarship-bg">
+                    <img src="/public/images/scholarship/image1.png" alt="">
+                </div>
+                <div class="h-16"></div>
+                <h1 class="title">Academic <br>Scholarships</h1>
+                <div class="h-8"></div>
+                <div class="landing desc">Find funding for your degree program.
+                    Create a profile to get matched to scholarships you are eligible for.
+                </div>
+                <div class="h-40"></div>
+                <button class="btn solid space">Create Profile Now</button>
+            </div>
+            <div class="general-margin front-content">
+                <div class="scholarship-bg">
+                    <img src="/public/images/scholarship/image2.png" alt=""> -->
+                </div>
+                <div class="h-16"></div>
+                <h1 class="title">Academic <br>Scholarships</h1>
+                <div class="h-8"></div>
+                <div class="landing desc">Find funding for your degree program.
+                    Create a profile to get matched to scholarships you are eligible for.
+                </div>
+                <div class="h-40"></div>
+                <button class="btn solid space">Create Profile Now</button>
+            </div>
         </div>
+
     </div>
     <div class="h-130"></div>
     <div class="scholarship-title">Scholarship Type</div>
@@ -128,7 +183,7 @@
                 <li>Scholarships for Women</li>
                 <li>Community Service Scholarships</li>
                 <li>Creative Scholarships</li>
-                <li>Unusual Scholarships</li>
+                <li>Accomodation Scholarships</li>
             </ul>
         </div>
     </div>
@@ -139,10 +194,8 @@
             <h3 class="sbs title">Academic Scholarships</h3>
             <div class="sbs line"></div>
             <div class="h-32"></div>
-            <div class="sbs desc">Start streaming on-demand video lectures
-                today from top instructors in subjects like
-                business, computer science, data science,
-                language learning, & more.</div>
+            <div class="sbs desc">Get access to merit-based financial assistance to fund your education while you focus
+                on your studies. <a href="">Explore Now!</a></div>
         </div>
         <div class="w-per-10"></div>
         <img src="./images/scholarship/image1.png" alt="arrow objectives">
@@ -153,10 +206,9 @@
             <h3 class="sbs title"> Average Academic Performance Scholarships</h3>
             <div class="sbs line"></div>
             <div class="h-32"></div>
-            <div class="sbs desc">Start streaming on-demand video lectures
-                today from top instructors in subjects like
-                business, computer science, data science,
-                language learning, & more.</div>
+            <div class="sbs desc">Every student deserves scholarship opportunities.
+                Receive funding for your education without needing to meet any GPA requirements. <a href="">Dive In!</a>
+            </div>
         </div>
         <div class="w-per-10"></div>
         <img src="./images/scholarship/image2.png" alt="values">
@@ -167,10 +219,8 @@
             <h3 class="sbs title">Athletic Scholarships</h3>
             <div class="sbs line"></div>
             <div class="h-32"></div>
-            <div class="sbs desc">Start streaming on-demand video lectures
-                today from top instructors in subjects like
-                business, computer science, data science,
-                language learning, & more.</div>
+            <div class="sbs desc">A scholarship program offering educational funding to students skilled in athletics.
+                <a href="">Learn More!</a></div>
         </div>
         <div class="w-per-10"></div>
         <img src="./images/scholarship/image3.png" alt="arrow objectives">
@@ -181,10 +231,8 @@
             <h3 class="sbs title">Scholarships for Minorities</h3>
             <div class="sbs line"></div>
             <div class="h-32"></div>
-            <div class="sbs desc">Start streaming on-demand video lectures
-                today from top instructors in subjects like
-                business, computer science, data science,
-                language learning, & more.</div>
+            <div class="sbs desc">Scholarships that provide funding to students who have less access to education than
+                others. <a href="">Explore Now!</a></div>
         </div>
         <div class="w-per-10"></div>
         <img src="./images/scholarship/image4.png" alt="values">
@@ -195,10 +243,8 @@
             <h3 class="sbs title">Scholarships for Women</h3>
             <div class="sbs line"></div>
             <div class="h-32"></div>
-            <div class="sbs desc">Start streaming on-demand video lectures
-                today from top instructors in subjects like
-                business, computer science, data science,
-                language learning, & more.</div>
+            <div class="sbs desc">Funding opportunities for women of all ages who wish to pursue an education. <a
+                    href="">Learn More!</a></div>
         </div>
         <div class="w-per-10"></div>
         <img src="./images/scholarship/image5.png" alt="arrow objectives">
@@ -206,29 +252,49 @@
     <div class="general-margin sbs-box reverse">
         <div class="sbs back"></div>
         <div class="sbs text-box">
-            <h3 class="sbs title">Creative 
-                Scholarships</h3>
+            <h3 class="sbs title">Community Service Scholarships</h3>
             <div class="sbs line"></div>
             <div class="h-32"></div>
-            <div class="sbs desc">Start streaming on-demand video lectures
-                today from top instructors in subjects like
-                business, computer science, data science,
-                language learning, & more.</div>
+            <div class="sbs desc">Scholarships that recognize and reward exceptional volunteer jobs or community
+                service. These opportunities exist in some recognized organizations. <a href="">Dive In!</a></div>
         </div>
         <div class="w-per-10"></div>
         <img src="./images/scholarship/image6.png" alt="values">
     </div>
+    <div class="general-margin sbs-box">
+        <div class="sbs back"></div>
+        <div class="sbs text-box">
+            <h3 class="sbs title">Creative
+                Scholarships</h3>
+            <div class="sbs line"></div>
+            <div class="h-32"></div>
+            <div class="sbs desc">These are merit-based scholarships awarded to exceptionally creative students. This
+                scholarship rewards talent over grades. <a href="">Apply Within!</a></div>
+        </div>
+        <div class="w-per-10"></div>
+        <img src="./images/scholarship/image6.png" alt="arrow objectives">
+    </div>
+    <!-- <div class="general-margin sbs-box reverse">
+        <div class="sbs back"></div>
+        <div class="sbs text-box">
+            <h3 class="sbs title">Creative
+                Scholarships</h3>
+            <div class="sbs line"></div>
+            <div class="h-32"></div>
+            <div class="sbs desc">These are merit-based scholarships awarded to exceptionally creative students. This
+                scholarship rewards talent over grades. <a href="">Apply Within!</a></div>
+        </div>
+        <div class="w-per-10"></div>
+        <img src="./images/scholarship/image6.png" alt="values">
+    </div> -->
 
     <footer>
         <div class="footer-element white-color">
             <div class="footer-box one">
                 <img src="./images/footer/logo_potrait.png" alt="" class="logo-icon">
                 <div class="desc accent-color">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua.Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua.
+                    We are committed to providing world-class education and empowering your career journey as an
+                    international student.
                 </div>
             </div>
             <div class="vline one"></div>
@@ -281,19 +347,20 @@
             </div>
         </div>
         <div class="policy-box white-color">
-            <div class="terms">Terms & Condition</div>
+            <div class="terms">© Harness International Talent, 2022</div>
             <div class="w-24"></div>
             <div class="vl-white"></div>
             <div class="w-24"></div>
-            <div class="privacy">Privacy Policies</div>
+            <!-- <div class="privacy">Privacy Policies</div> -->
         </div>
     </footer>
-    
+
     <script>
         var shortHeight = true;
     </script>
     <script src="./script/base.js"></script>
     <script src="./script/anim.js"></script>
+    <script src="./script/scholarship.js"></script>
 </body>
 
 </html>

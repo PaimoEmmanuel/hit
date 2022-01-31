@@ -482,7 +482,7 @@ header .menu {
   margin: 0 1.7vw;
   font-size: 0.9em;
   color: #ebebeb;
-  cursor: default;
+  cursor: pointer;
   text-decoration: none;
 }
 header .menu .hover-line {
@@ -610,6 +610,10 @@ header .account-btn {
 }
 .sbs-box .desc {
   color: #5d6368;
+}
+.sbs-box .desc a {
+  color: #f89318;
+  text-decoration: none;
 }
 
 .sbs-box.reverse {

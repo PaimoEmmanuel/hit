@@ -1,54 +1,76 @@
 @use "../../abstract/all" as abs;
 
 .subscribe-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 80px;
+  padding-top: 100px;
+  margin-top: 100px;
+  // background-color: abs.$blue-500;
+  background-image: url("../images/subscribe_slant.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: abs.$white-color;
+
+  .title {
+    display: inline-block;
+    text-align: center;
+    font-size: 2.3em;
+    font-weight: 800;
+    // background-color: coral;
+  }
+
+  .desc {
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.3em;
+    max-width: 860px;
+  }
+
+  .input-box {
     display: flex;
-    flex-direction: column;
+    text-align: center;
+    min-width: 100%;
+    max-width: 860px;
+    justify-content: space-between;
     align-items: center;
-    padding-bottom: 80px;
-    padding-top: 100px;
-    margin-top: 100px;
-    // background-color: abs.$blue-500;
-    background-image: url("../images/subscribe_slant.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: abs.$white-color;
+    position: relative;
 
-    .title {
-        display: inline-block;
-        text-align: center;
-        font-size: 2.3em;
-        font-weight: 800;
-        // background-color: coral;
+    & svg {
+      position: absolute;
+      left: 50px;
     }
-
-    .desc {
-        text-align: center;
-        font-weight: 300;
-        font-size: 1.3em;
+    & button {
+      height: 70px;
     }
-
-    .input-box {
-        display: flex;
-        text-align: center;
-    }
+  }
 }
 
 #email-input {
-    width: 10px;
-    padding-left: 300px;
+  width: 80%;
+  // padding-left: 300px;
+  border-radius: 38px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding-left: 100px;
+  height: 70px;
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
 }
 
 .difff {
-    background-color: aqua;
+  background-color: aqua;
 }
 
 @media (min-width: 846px) {
-    .subscribe-box {
-        padding-bottom: 100px;
-        padding-top: 148px;
+  .subscribe-box {
+    padding-bottom: 100px;
+    padding-top: 148px;
 
-        .title {
-            font-size: 2.8em;
-        }
+    .title {
+      font-size: 2.8em;
     }
+  }
 }

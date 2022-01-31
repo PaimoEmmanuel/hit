@@ -1,135 +1,139 @@
 @use "../../abstract/all" as abs;
 
 .sbs-box {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    padding-top: 45px;
-    padding-bottom: 30px;
-    padding-left: 6%;
-    padding-right: 6%;
-    position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  padding-top: 45px;
+  padding-bottom: 30px;
+  padding-left: 6%;
+  padding-right: 6%;
+  position: relative;
 
-    .back {
-        position: absolute;
-        width: 200px;
-        height: 220px;
-        background-color: abs.$back-blue;
-        z-index: -1;
-        top: 80px;
-        right: 0;
-    }
-    //For smaller screen set the image height
-    img {
-        height: 290px;
-        object-fit: cover;
-    }
+  .back {
+    position: absolute;
+    width: 200px;
+    height: 220px;
+    background-color: abs.$back-blue;
+    z-index: -1;
+    top: 80px;
+    right: 0;
+  }
+  //For smaller screen set the image height
+  img {
+    height: 290px;
+    object-fit: cover;
+  }
 
-    .sbs.text-box {
-        .h-32 {
-            height: 22px;
-        }
+  .sbs.text-box {
+    .h-32 {
+      height: 22px;
     }
+  }
 
-    ul {
-        list-style-position: inside;
-        list-style: none;
-        margin-left: 19px;
-    }
+  ul {
+    list-style-position: inside;
+    list-style: none;
+    margin-left: 19px;
+  }
 
-    ul li::before {
-        content: "\2022";
-        color: abs.$accent-color;
-        font-weight: bold;
-        display: inline-block;
-        width: 1em;
-        margin-left: -1em; /* Also needed for space (tweak if needed) */
-    }
+  ul li::before {
+    content: "\2022";
+    color: abs.$accent-color;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
 
-    .line {
-        height: 5px;
-        width: 120px;
-        border-radius: 50px;
-        background-color: abs.$accent-color;
-    }
+  .line {
+    height: 5px;
+    width: 120px;
+    border-radius: 50px;
+    background-color: abs.$accent-color;
+  }
 
-    .title {
-        font-size: 1.7em;
-        color: abs.$dark-text;
-        padding-top: 35px;
-    }
+  .title {
+    font-size: 1.7em;
+    color: abs.$dark-text;
+    padding-top: 35px;
+  }
 
-    .desc {
-        color: abs.$light-text;
+  .desc {
+    color: abs.$light-text;
+    a {
+      color: #f89318;
+      text-decoration: none;
     }
+  }
 }
 
 .sbs-box.reverse {
-    display: flex;
-    flex-direction: column-reverse;
+  display: flex;
+  flex-direction: column-reverse;
 
-    .back {
-        right: unset;
-        left: 0;
-    }
+  .back {
+    right: unset;
+    left: 0;
+  }
 }
 
 @media (min-width: 700px) {
-    .sbs-box {
-        padding-left: 10%;
-        padding-right: 10%;
-    }
+  .sbs-box {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 }
 
 @media (min-width: 846px) {
-    .sbs-box {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding-top: 120px;
-        padding-bottom: 80px;
-        padding-left: 9%;
-        padding-right: 9%;
+  .sbs-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 120px;
+    padding-bottom: 80px;
+    padding-left: 9%;
+    padding-right: 9%;
 
-        img {
-            width: 390px;
-            height: auto;
-            border-radius: 12px;
-        }
-
-        .back {
-            position: absolute;
-            width: 320px;
-            height: 300px;
-            background-color: abs.$back-blue;
-            z-index: -1;
-            top: 170px;
-            right: 0;
-        }
-
-        .title {
-            padding-top: 0;
-            font-size: 2.3em;
-        }
+    img {
+      width: 390px;
+      height: auto;
+      border-radius: 12px;
     }
 
-    .sbs.text-box {
-        width: 400px;
+    .back {
+      position: absolute;
+      width: 320px;
+      height: 300px;
+      background-color: abs.$back-blue;
+      z-index: -1;
+      top: 170px;
+      right: 0;
     }
 
-    .sbs-box.reverse {
-        flex-direction: row-reverse;
-
-        .back {
-            right: unset;
-            left: 0;
-        }
+    .title {
+      padding-top: 0;
+      font-size: 2.3em;
     }
+  }
+
+  .sbs.text-box {
+    width: 400px;
+  }
+
+  .sbs-box.reverse {
+    flex-direction: row-reverse;
+
+    .back {
+      right: unset;
+      left: 0;
+    }
+  }
 }
 
 @media (min-width: 1100px) {
-    .sbs-box {
-        padding-left: 13%;
-        padding-right: 13%;
-    }
+  .sbs-box {
+    padding-left: 13%;
+    padding-right: 13%;
+  }
 }
