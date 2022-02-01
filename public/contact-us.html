@@ -1,0 +1,247 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="sass/app.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="side-menu">
+        <div class="close">
+            <div class="close-menu" onclick="closeSideMenu()">
+                <div class="line one"></div>
+                <div class="line two"></div>
+            </div>
+        </div>
+        <div class="menu-column">
+            <a href="./about_us.html" class="menu about">
+                <div>About us</div>
+                <div class="hover-line"></div>
+            </a>
+            <a href="./scholarship.html" class="menu scholarship">
+                <div>Scholarship Type</div>
+                <div class="hover-line"></div>
+            </a>
+            <div class="menu events">
+                <div>News & Events</div>
+                <div class="hover-line"></div>
+            </div>
+            <div class="menu home">
+                <div>Contact Us</div>
+                <div class="hover-line"></div>
+            </div>
+            <div class="h-32"></div>
+            <div class="account-btn">
+                <a href="./register.html" class="a-no-deco">
+                    <button class="sign-up btn border">Sign Up</button>
+                </a>
+                <div class="w-24"></div>
+
+                <a href="./login.html" class="a-no-deco">
+                    <button class="sign-in btn solid">Sign In</button>
+                </a>
+            </div>
+            <div class="h-56"></div>
+
+        </div>
+    </div>
+    <div class="front-bg contact-bg">
+        <div class="header-placeholder"></div>
+        <header class="transparent">
+            <a href="./index.html">
+                <img src="./images/logo.png" alt="logo">
+            </a>
+            <div class="menu-row f-we-300">
+                <a href="./about_us.html" class="menu about">
+                    <div>About us</div>
+                    <div class="hover-line"></div>
+                </a>
+                <a href="./scholarship.html" class="menu scholarship">
+                    <div>Scholarship Type</div>
+                    <div class="hover-line"></div>
+                </a>
+                <div class="menu events">
+                    <div>News & Events</div>
+                    <div class="hover-line"></div>
+                </div>
+                <div class="menu home">
+                    <div>Contact Us</div>
+                    <div class="hover-line"></div>
+                </div>
+            </div>
+            <!-- <div class="search"></div> -->
+            <div class="account-btn">
+                <a href="./register.html" class="a-no-deco">
+                    <button class="sign-up btn border">Sign Up</button>
+                </a>
+                <div class="w-24"></div>
+
+                <a href="./login.html" class="a-no-deco">
+                    <button class="sign-in btn solid">Sign In</button>
+                </a>
+            </div>
+            <div class="ham-menu" onclick="openSideMenu(event)">
+                <div class="line one"></div>
+                <div class="line two"></div>
+                <div class="line three"></div>
+            </div>
+        </header>
+        <div class="h-32"></div>
+        <div class="general-margin front-content">
+            <div class="h-16"></div>
+            <h1 class="title">Contact Us</h1>
+            <div class="h-8"></div>
+            <div class="landing desc">
+                Lorem Ipsulm Lorem Ipsulm Lorem IpsulmLorem Ipsulm Lorem Ipsulm Lorem Ipsulm Lorem Ipsulm Lorem Ipsulm
+                Lorem Ipsulm Lorem Ipsulm Lorem IpsulmvLorem Ipsulm Lorem Ipsulm
+            </div>
+            <div class="h-40"></div>
+            <button class="btn solid space">Leave a message</button>
+        </div>
+    </div>
+    <section class="contact-section">
+        <div class="contact-text">
+            <h3>Contact me to arrange your consultation and coaching</h3>
+            <div>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                    took a galley. Lorem ipsum dolor sit am</p>
+                <div class="contact-details">
+                    <span>
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M21.1909 14.489L21.1529 13.662L14.6699 12.736L13.3549 15.31C11.9665 14.5283 10.6973 13.5517 9.58591 12.41C8.4315 11.3004 7.44782 10.0259 6.66691 8.62801L9.46691 7.22801L6.66691 0.708008L5.90691 0.818008C4.61977 0.995313 3.42729 1.59296 2.51491 2.51801C-0.658091 5.68701 0.584908 11.9 5.34291 16.657C8.32491 19.638 11.8759 21.239 14.8939 21.238C15.7375 21.2674 16.5784 21.1274 17.3669 20.8263C18.1554 20.5252 18.8756 20.0691 19.4849 19.485C20.1073 18.8208 20.5813 18.0319 20.8754 17.1705C21.1695 16.3092 21.2771 15.3951 21.1909 14.489ZM18.0709 18.071C15.7709 20.371 10.5899 19.071 6.75691 15.243C2.92391 11.415 1.62891 6.22901 3.92891 3.92901C4.35765 3.49451 4.88239 3.16672 5.46091 2.97201L6.88091 6.28501L5.77391 6.83801C5.53411 6.95811 5.32077 7.12498 5.14646 7.3288C4.97215 7.53262 4.84039 7.76926 4.75894 8.02478C4.6775 8.28031 4.64801 8.54955 4.67222 8.81664C4.69643 9.08374 4.77384 9.34329 4.89991 9.58001C5.77526 11.1482 6.87598 12.5794 8.16691 13.828C9.41583 15.1045 10.8413 16.1952 12.3999 17.067C12.6402 17.1974 12.904 17.2785 13.1761 17.3054C13.4481 17.3324 13.7227 17.3047 13.9839 17.224C14.2393 17.1445 14.476 17.014 14.6795 16.8404C14.883 16.6668 15.0491 16.4537 15.1679 16.214L15.8149 14.92L19.1819 15.401C19.1435 16.3954 18.7492 17.3429 18.0709 18.071Z"
+                                fill="#F89318" />
+                        </svg>
+                        +19796610789</span>
+                    <span>
+                        <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2 0H20C21.1046 0 22 0.89543 22 2V16C22 17.1046 21.1046 18 20 18H2C0.89543 18 0 17.1046 0 16V2C0 0.89543 0.89543 0 2 0ZM2 6.61811V16H20V6.61853L11 11.1185L2 6.61811ZM2 4.38199L11 8.88245L20 4.38247V2H2V4.38199Z"
+                                fill="#F89318" />
+                        </svg>
+
+                        Support@it.com</span>
+                </div>
+            </div>
+        </div>
+        <form class="form" action="post">
+            <div>
+                <label for="firstname">First Name</label>
+                <input type="text" name="firstname" id="firstname" placeholder="Input your first name in here">
+            </div>
+            <div>
+                <label for="lastname">Last Name</label>
+                <input type="text" name="lastname" id="lastname" placeholder="Input your last name in here">
+            </div>
+            <div>
+                <label for="email">Email Address</label>
+                <input type="email" name="email" id="email" placeholder="Input your email address in here">
+            </div>
+            <div>
+                <label for="firstname">Subject</label>
+                <input type="text" name="subject" id="subject" placeholder="Input your subject in here">
+            </div>
+            <div class="contact-message">
+                <label for="message">Messages</label>
+                <textarea name="messages" id="message" cols="30" rows="10"
+                    placeholder="Write your messages in here"></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="map">
+            <div class="address">
+                <div>
+                    <h4>Office Address</h4>
+                    <p>10000 N/Eldridge Pkwy 77065 houston Texas</p>
+                </div>
+                <a target="_blank" href="https://www.google.com/maps?ll=29.918623,-95.601325&z=16&t=m&hl=en&gl=CH&mapclient=embed&q=Building+7+10000+N+Eldridge+Pkwy+Houston,+TX+77065+USA">Open in maps</a>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3458.1138852802305!2d-95.60351338488786!3d29.918623381928292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640d1a72bdafca3%3A0xfc43098b561b20d4!2sBuilding%207%2C%2010000%20N%20Eldridge%20Pkwy%2C%20Houston%2C%20TX%2077065%2C%20USA!5e0!3m2!1sen!2sch!4v1643634932715!5m2!1sen!2sch"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-element white-color">
+            <div class="footer-box one">
+                <img src="./images/footer/logo_potrait.png" alt="" class="logo-icon">
+                <div class="desc accent-color">
+                    We are committed to providing world-class education and empowering your career journey as an
+                    international student.
+                </div>
+            </div>
+            <div class="vline one"></div>
+            <div class="footer-box two">
+                <ul class="footer-menu-list">
+                    <li>About us</li>
+                    <li>FAQs</li>
+                    <li>T&C</li>
+                    <li>Privacy policy</li>
+                    <li>HPPA Policy</li>
+                </ul>
+            </div>
+            <div class="vline two"></div>
+            <div class="footer-box three">
+                <div class="connect-holder">
+                    <div class="connect-text em1-4 bold-txt">Connect with HIT</div>
+                    <div class="h-24"></div>
+                    <div class="icon-text">
+                        <img src="images/footer/locate.png" alt="" class="icon">
+                        <div class="w-16"></div>
+                        <div class="text">2706 N Buffalo Grove Rd
+                            Arlington Heights, Illinois(IL), 60004</div>
+                    </div>
+                    <div class="h-16"></div>
+                    <div class="icon-text">
+                        <img src="images/footer/call.png" alt="" class="icon">
+                        <div class="w-16"></div>
+                        <div class="text">(847) 749-0143</div>
+                    </div>
+                    <div class="h-16"></div>
+                    <div class="icon-text">
+                        <img src="images/footer/mail.png" alt="" class="icon">
+                        <div class="w-16"></div>
+                        <div class="text">support@HIT.com</div>
+                    </div>
+                    <div class="h-24"></div>
+                    <div class="social-icons">
+                        <img src="images/footer/facebook.png" alt="" class="icon">
+                        <div class="w-24"></div>
+                        <img src="images/footer/instagram.png" alt="" class="icon">
+                        <div class="w-24"></div>
+                        <img src="images/footer/twitter.png" alt="" class="icon">
+                        <div class="w-24"></div>
+                        <img src="images/footer/youtube.png" alt="" class="icon">
+                        <div class="w-24"></div>
+                        <img src="images/footer/linkedin.png" alt="" class="icon">
+                        <div class="w-24"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="policy-box white-color">
+            <div class="terms">© Harness International Talent, 2022</div>
+            <div class="w-24"></div>
+            <div class="vl-white"></div>
+            <div class="w-24"></div>
+        </div>
+    </footer>
+
+    <script src="./script/base.js"></script>
+    <script src="./script/anim.js"></script>
+</body>
+
+</html>

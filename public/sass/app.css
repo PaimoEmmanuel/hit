@@ -844,6 +844,10 @@ header .account-btn {
   background-image: url("../images/events/landing_bg.png");
 }
 
+.contact-bg {
+  background-image: url("../images/contact.png");
+}
+
 .banner-wrap {
   width: 300%;
   transition: all 0.2s;
@@ -946,6 +950,11 @@ header .account-btn {
   align-items: center;
   position: relative;
 }
+@media (max-width: 900px) {
+  .subscribe-box .input-box {
+    flex-direction: column;
+  }
+}
 .subscribe-box .input-box svg {
   position: absolute;
   left: 50px;
@@ -970,6 +979,12 @@ header .account-btn {
 }
 #email-input::placeholder {
   color: rgba(255, 255, 255, 0.5);
+}
+@media (max-width: 900px) {
+  #email-input {
+    height: 100%;
+    width: 100%;
+  }
 }
 
 .difff {
@@ -1257,6 +1272,12 @@ body {
     text-align: unset;
   }
 }
+@media (max-width: 600px) {
+  .scholarship-banner .front-content {
+    padding: 0;
+  }
+}
+
 .text-stats {
   display: flex;
   flex-wrap: wrap;
@@ -1450,6 +1471,193 @@ body {
 
 .team-item-box.last {
   margin-left: 0;
+}
+
+.contact-section {
+  background-color: #f4f7fd;
+  padding: 104px;
+}
+@media (max-width: 900px) {
+  .contact-section {
+    padding: 70px;
+  }
+}
+@media (max-width: 600px) {
+  .contact-section {
+    padding: 24px;
+  }
+}
+.contact-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 1024px) {
+  .contact-text {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.contact-text h3 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 57.6px;
+  max-width: 608px;
+}
+@media (max-width: 1024px) {
+  .contact-text h3 {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 900px) {
+  .contact-text h3 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+@media (max-width: 600px) {
+  .contact-text h3 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+.contact-text p {
+  color: #515151;
+  max-width: 504px;
+}
+.contact-details {
+  display: flex;
+  gap: 60px;
+  color: #f89318;
+  margin-top: 24px;
+}
+@media (max-width: 900px) {
+  .contact-details {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+.contact-details span {
+  display: flex;
+  align-items: center;
+}
+.contact-details span svg {
+  margin-right: 18px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-areas: "one two" "four five" "three three";
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+  row-gap: 24px;
+  margin: 64px 0 120px;
+}
+@media (max-width: 600px) {
+  .form {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-template-areas: "three";
+  }
+}
+.form label {
+  display: block;
+  margin-bottom: 16px;
+}
+.form input {
+  width: 100%;
+  border: 1px solid #f4f7fd;
+  border-radius: 8px;
+  margin: 0;
+}
+.form input::-moz-placeholder {
+  font-weight: 400;
+}
+.form input:-ms-input-placeholder {
+  font-weight: 400;
+}
+.form input::placeholder {
+  font-weight: 400;
+}
+.form .contact-message {
+  grid-area: three;
+}
+.form .contact-message textarea {
+  width: 100%;
+  border: 1px solid #f4f7fd;
+  border-radius: 8px;
+  height: 229px;
+  padding: 18px 16px;
+}
+.form button {
+  border-radius: 8px;
+  width: 177px;
+  padding: 18px 24px;
+}
+
+.map {
+  background: #ffffff;
+  border: 1px solid #f4f7fd;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 16px;
+  position: relative;
+}
+@media (max-width: 600px) {
+  .map {
+    padding: 8px;
+  }
+}
+.map iframe {
+  border-radius: 8px;
+  width: 100%;
+}
+
+.address {
+  position: absolute;
+  bottom: 40px;
+  background: #ffffff;
+  box-shadow: 0px 48px 32px rgba(143, 143, 143, 0.05);
+  border-radius: 8px;
+  left: 40px;
+  right: 40px;
+  padding: 24px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 900px) {
+  .address {
+    flex-direction: column;
+    align-items: flex-start;
+    left: 16px;
+    right: 16px;
+    margin: 0 8px;
+  }
+}
+.address h4 {
+  font-size: 24px;
+  line-height: 28.8px;
+  margin-bottom: 24px;
+}
+.address a {
+  height: 56px;
+  width: 163px;
+  background: #f89318;
+  border-radius: 8px;
+  color: white;
+  border: none;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 900px) {
+  .address a {
+    height: 50px;
+    margin-top: 10px;
+  }
 }
 
 .join-hit {
