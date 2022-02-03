@@ -416,6 +416,10 @@ footer {
   margin-top: 8px;
   list-style: none;
 }
+.footer-box.two li a {
+  text-decoration: none;
+  color: inherit;
+}
 
 .policy-box {
   padding: 54px 7% 70px 7%;

@@ -416,6 +416,10 @@ footer {
   margin-top: 8px;
   list-style: none;
 }
+.footer-box.two li a {
+  text-decoration: none;
+  color: inherit;
+}
 
 .policy-box {
   padding: 54px 7% 70px 7%;
@@ -1218,8 +1222,14 @@ header .account-btn {
   margin-bottom: 53px;
 }
 .sponsors .logos img {
-  min-width: 200px;
+  min-width: 20px;
   max-width: 200px;
+}
+@media (max-width: 600px) {
+  .sponsors .logos img {
+    min-width: 30%;
+    max-width: 30%;
+  }
 }
 
 body {
