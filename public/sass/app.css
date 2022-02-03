@@ -963,6 +963,11 @@ header .account-btn {
   position: absolute;
   left: 50px;
 }
+@media (max-width: 900px) {
+  .subscribe-box .input-box svg {
+    top: 20px;
+  }
+}
 .subscribe-box .input-box button {
   height: 70px;
 }
@@ -1280,6 +1285,9 @@ body {
   }
   .scholarship-list ul li {
     text-align: unset;
+  }
+  .scholarship-list ul li a {
+    color: black;
   }
 }
 @media (max-width: 600px) {

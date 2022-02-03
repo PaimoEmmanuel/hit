@@ -42,6 +42,9 @@
     & svg {
       position: absolute;
       left: 50px;
+      @media (max-width: 900px) {
+        top: 20px;
+      }
     }
     & button {
       height: 70px;
