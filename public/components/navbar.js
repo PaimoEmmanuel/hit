@@ -27,7 +27,7 @@ class Navbar extends HTMLElement {
           </a>
 
       </div>
-      <!-- <div class="search"></div> -->
+      <!-- <div class="search"></div> 
       <div class="account-btn">
           <a href="./register.html" class="a-no-deco">
               <button class="sign-up btn border">Sign Up</button>
@@ -37,7 +37,7 @@ class Navbar extends HTMLElement {
           <a href="./login.html" class="a-no-deco">
               <button class="sign-in btn solid">Sign In</button>
           </a>
-      </div>
+      </div> -->
       <div class="ham-menu" onclick="openSideMenu(event)">
           <div class="line one"></div>
           <div class="line two"></div>

@@ -7,7 +7,7 @@
   padding-bottom: 80px;
   padding-top: 100px;
   margin-top: -85px;
-  background-color: #E9EFFB;
+  background-color: #e9effb;
   // background-image: url("../images/subscribe_slant.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -62,7 +62,7 @@
   height: 70px;
   color: black;
   &::placeholder {
-    color: rgba(255, 255, 255, 0.5);
+    color: #777;
   }
   @media (max-width: 900px) {
     height: 100%;

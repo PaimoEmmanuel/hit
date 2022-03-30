@@ -935,7 +935,7 @@ header .account-btn {
   padding-bottom: 80px;
   padding-top: 100px;
   margin-top: -85px;
-  background-color: #E9EFFB;
+  background-color: #e9effb;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -989,13 +989,13 @@ header .account-btn {
   color: black;
 }
 #email-input::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.5);
+  color: #777;
 }
 #email-input:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.5);
+  color: #777;
 }
 #email-input::placeholder {
-  color: rgba(255, 255, 255, 0.5);
+  color: #777;
 }
 @media (max-width: 900px) {
   #email-input {

@@ -29,7 +29,7 @@ class SideMenu extends HTMLElement {
               <div class="hover-line"></div>
           </a>
           <div class="h-32"></div>
-          <div class="account-btn">
+          <!-- <div class="account-btn">
               <a href="./register.html" class="a-no-deco">
                   <button class="sign-up btn border">Sign Up</button>
               </a>
@@ -38,7 +38,7 @@ class SideMenu extends HTMLElement {
               <a href="./login.html" class="a-no-deco">
                   <button class="sign-in btn solid">Sign In</button>
               </a>
-          </div>
+          </div> -->
           <div class="h-56"></div>
 
       </div>
