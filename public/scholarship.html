@@ -21,48 +21,13 @@
         rel="stylesheet">
 
     <title>Scholarships - Harness International Talent</title>
+    <script src="./components/navbar.js"></script>
+    <script src="./components/footer.js"></script>
+    <script src="./components/side-menu.js"></script>
 </head>
 
 <body>
-    <div class="side-menu">
-        <div class="close">
-            <div class="close-menu" onclick="closeSideMenu()">
-                <div class="line one"></div>
-                <div class="line two"></div>
-            </div>
-        </div>
-        <div class="menu-column">
-            <a href="./about_us.html" class="menu about">
-                <div>About us</div>
-                <div class="hover-line"></div>
-            </a>
-            <a href="./scholarship.html" class="menu scholarship">
-                <div>Scholarship Type</div>
-                <div class="hover-line"></div>
-            </a>
-            <a href="./events.html" class="menu events">
-                <div>News & Events</div>
-                <div class="hover-line"></div>
-            </a>
-            <a href="./contact-us.html" class="menu home">
-                <div>Contact Us</div>
-                <div class="hover-line"></div>
-            </a>
-            <div class="h-32"></div>
-            <div class="account-btn">
-                <a href="./register.html" class="a-no-deco">
-                    <button class="sign-up btn border">Sign Up</button>
-                </a>
-                <div class="w-24"></div>
-
-                <a href="./login.html" class="a-no-deco">
-                    <button class="sign-in btn solid">Sign In</button>
-                </a>
-            </div>
-            <div class="h-56"></div>
-
-        </div>
-    </div>
+    <side-menu></side-menu>
     <div class="front-bg">
         <div class="banner-arrow">
             <div class="prev">
@@ -88,45 +53,7 @@
             <img src="/public/images/scholarship/image2.png" alt=""> -->
         </div>
         <div class="header-placeholder"></div>
-        <header class="transparent">
-            <a href="./index.html">
-                <img src="./images/logo.png" alt="logo">
-            </a>
-            <div class="menu-row f-we-300">
-                <a href="./about_us.html" class="menu about">
-                    <div>About us</div>
-                    <div class="hover-line"></div>
-                </a>
-                <div class="menu scholarship">
-                    <div>Scholarship Type</div>
-                    <div class="hover-line"></div>
-                </div>
-                <a href="./events.html" class="menu events">
-                    <div>News & Events</div>
-                    <div class="hover-line"></div>
-                </a>
-                <a href="./contact-us.html" class="menu home">
-                    <div>Contact Us</div>
-                    <div class="hover-line"></div>
-                </a>
-            </div>
-            <!-- <div class="search"></div> -->
-            <div class="account-btn">
-                <a href="./register.html" class="a-no-deco">
-                    <button class="sign-up btn border">Sign Up</button>
-                </a>
-                <div class="w-24"></div>
-
-                <a href="./login.html" class="a-no-deco">
-                    <button class="sign-in btn solid">Sign In</button>
-                </a>
-            </div>
-            <div class="ham-menu" onclick="openSideMenu(event)">
-                <div class="line one"></div>
-                <div class="line two"></div>
-                <div class="line three"></div>
-            </div>
-        </header>
+        <navigation-bar></navigation-bar>
         <div class="h-32"></div>
         <div class="flex banner-wrap scholarship-banner">
             <div class="general-margin front-content">
@@ -136,37 +63,40 @@
                 <div class="h-16"></div>
                 <h1 class="title">Academic <br>Scholarships</h1>
                 <div class="h-8"></div>
-                <div class="landing desc">Find funding for your degree program.
-                    Create a profile to get matched to scholarships you are eligible for.
+                <div class="landing desc">
+                    Get access to merit-based financial assistance to fund your education while you focus on your
+                    studies.
                 </div>
                 <div class="h-40"></div>
-                <button class="btn solid space">Create Profile Now</button>
+                <button class="btn solid space">Explore Now!</button>
             </div>
             <div class="general-margin front-content">
                 <div class="scholarship-bg">
                     <img src="./images/scholarship/image1.png" alt="">
                 </div>
                 <div class="h-16"></div>
-                <h1 class="title">Academic <br>Scholarships</h1>
+                <h1 class="title">Average Academic <br>Performance Scholarships</h1>
                 <div class="h-8"></div>
-                <div class="landing desc">Find funding for your degree program.
-                    Create a profile to get matched to scholarships you are eligible for.
+                <div class="landing desc">
+                    Every student deserves scholarship opportunities.
+                    Receive funding for your education without needing to meet any GPA requirements.
                 </div>
                 <div class="h-40"></div>
-                <button class="btn solid space">Create Profile Now</button>
+                <button class="btn solid space">Dive In!</button>
             </div>
             <div class="general-margin front-content">
                 <div class="scholarship-bg">
                     <img src="./images/scholarship/image2.png" alt=""> -->
                 </div>
                 <div class="h-16"></div>
-                <h1 class="title">Academic <br>Scholarships</h1>
+                <h1 class="title">Athletic <br>Scholarships</h1>
                 <div class="h-8"></div>
-                <div class="landing desc">Find funding for your degree program.
-                    Create a profile to get matched to scholarships you are eligible for.
+                <div class="landing desc">
+                    A scholarship program offering educational funding to students skilled in
+                    athletics.
                 </div>
                 <div class="h-40"></div>
-                <button class="btn solid space">Create Profile Now</button>
+                <button class="btn solid space">Learn More!</button>
             </div>
         </div>
 
@@ -265,7 +195,7 @@
                 service. These opportunities exist in some recognized organizations. <a href="">Dive In!</a></div>
         </div>
         <div class="w-per-10"></div>
-        <img src="./images/scholarship/image6.png" alt="values">
+        <img src="./images/scholarship/image7.jpg" alt="values">
     </div>
     <div id="creative" class="general-margin sbs-box">
         <div class="sbs back"></div>
@@ -294,72 +224,7 @@
         <img src="./images/scholarship/image6.png" alt="values">
     </div> -->
 
-    <footer>
-        <div class="footer-element white-color">
-            <div class="footer-box one">
-                <img src="./images/footer/logo_potrait.png" alt="" class="logo-icon">
-                <div class="desc accent-color">
-                    We are committed to providing world-class education and empowering your career journey as an
-                    international student.
-                </div>
-            </div>
-            <div class="vline one"></div>
-            <div class="footer-box two">
-                <ul class="footer-menu-list">
-                    <li><a href="about_us.html">About us</a></li>
-                    <li>FAQs</li>
-                    <li>T&C</li>
-                    <li>Privacy policy</li>
-                    <li>HPPA Policy</li>
-                </ul>
-            </div>
-            <div class="vline two"></div>
-            <div class="footer-box three">
-                <div class="connect-holder">
-                    <div class="connect-text em1-4 bold-txt">Connect with HIT</div>
-                    <div class="h-24"></div>
-                    <div class="icon-text">
-                        <img src="images/footer/locate.png" alt="" class="icon">
-                        <div class="w-16"></div>
-                        <div class="text">10000 North Eldridge Pkwy Houston, Texas(TX) 77065
-                        </div>
-                    </div>
-                    <div class="h-16"></div>
-                    <div class="icon-text">
-                        <img src="images/footer/call.png" alt="" class="icon">
-                        <div class="w-16"></div>
-                        <div class="text"> +1 (979) 661-0789</div>
-                    </div>
-                    <div class="h-16"></div>
-                    <div class="icon-text">
-                        <img src="images/footer/mail.png" alt="" class="icon">
-                        <div class="w-16"></div>
-                        <div class="text">support@HIT.com</div>
-                    </div>
-                    <div class="h-24"></div>
-                    <div class="social-icons">
-                        <img src="images/footer/facebook.png" alt="" class="icon">
-                        <div class="w-24"></div>
-                        <img src="images/footer/instagram.png" alt="" class="icon">
-                        <div class="w-24"></div>
-                        <img src="images/footer/twitter.png" alt="" class="icon">
-                        <div class="w-24"></div>
-                        <img src="images/footer/youtube.png" alt="" class="icon">
-                        <div class="w-24"></div>
-                        <img src="images/footer/linkedin.png" alt="" class="icon">
-                        <div class="w-24"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="policy-box white-color">
-            <div class="terms">© Harness International Talent, 2022</div>
-            <div class="w-24"></div>
-            <div class="vl-white"></div>
-            <div class="w-24"></div>
-            <!-- <div class="privacy">Privacy Policies</div> -->
-        </div>
-    </footer>
+    <custom-footer></custom-footer>
 
     <script>
         var shortHeight = true;

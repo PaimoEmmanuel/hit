@@ -19,6 +19,9 @@ footer {
   img {
     align-self: center;
   }
+  .footer-logo {
+    margin-bottom: 60px;
+  }
 
   .vline {
     display: none;
@@ -59,10 +62,11 @@ footer {
 .policy-box {
   padding: 54px 7% 70px 7%;
   display: flex;
+  justify-content: space-between;
 
   .vl-white {
     height: 20px;
-    width: 0.1px;
+    width: 0px;
     background-color: rgba(223, 223, 223, 0.385);
   }
 }

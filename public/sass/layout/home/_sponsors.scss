@@ -13,10 +13,10 @@
   }
 
   .logos {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    // grid-template-columns: repeat(3, minmax(0, 1fr));
+    display: grid;
+    // justify-content: space-between;
+    // align-items: center;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     margin-bottom: 53px;
     img {
       min-width: 20px;
