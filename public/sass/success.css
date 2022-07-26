@@ -1,0 +1,26 @@
+.success-image {
+  display: block;
+  margin: 60px auto;
+}
+.success-heading {
+  font-size: 67px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 70px;
+}
+.success-message {
+  font-size: 36px;
+  font-size: 700;
+  margin-top: 24px;
+  text-align: center;
+  margin-bottom: 400px;
+}
+
+.success-message .partner {
+  color: #463d80;
+  text-decoration: none;
+}
+.success-message .scholarship {
+  color: #f89318;
+  text-decoration: none;
+}

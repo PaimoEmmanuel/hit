@@ -291,7 +291,7 @@ h1 {
 }
 
 header.white .border {
-  border: 1.7px solid #a8a8a8;
+  border: 1.7px solid rgb(168, 168, 168);
   color: #25282B;
 }
 
@@ -336,14 +336,14 @@ input {
   font-size: 1em;
   padding: 0.7rem 10px;
   border-radius: 15px;
-  border: 1.5px solid #e4e4e4;
+  border: 1.5px solid rgb(228, 228, 228);
   margin: 10px 0 10px;
 }
 
 input:focus {
   border: 1.5px solid #409DF9;
   outline: none;
-  box-shadow: 0 0 4px #bfbfbf;
+  box-shadow: 0 0 4px rgb(191, 191, 191);
 }
 
 input[type=checkbox] {
@@ -353,15 +353,15 @@ input[type=checkbox] {
 }
 
 input::-moz-placeholder {
-  color: #e4e4e4;
+  color: rgb(228, 228, 228);
 }
 
 input:-ms-input-placeholder {
-  color: #e4e4e4;
+  color: rgb(228, 228, 228);
 }
 
 input::placeholder {
-  color: #e4e4e4;
+  color: rgb(228, 228, 228);
 }
 
 label {
@@ -371,7 +371,7 @@ label {
 }
 
 label.check {
-  color: #a0a0a0;
+  color: rgb(160, 160, 160);
   font-weight: 600;
 }
 
@@ -489,7 +489,7 @@ header .account-btn {
 header .menu {
   margin: 0 1.7vw;
   font-size: 0.9em;
-  color: #ebebeb;
+  color: rgb(235, 235, 235);
   cursor: pointer;
   text-decoration: none;
 }
@@ -533,7 +533,7 @@ header.white .menu {
   color: #25282B;
 }
 header.white .ham-menu .line {
-  background-color: #545454;
+  background-color: rgb(84, 84, 84);
   border-radius: 1px;
 }
 
@@ -541,12 +541,10 @@ header.white .ham-menu .line {
   .header-placeholder {
     height: 120px;
   }
-
   header {
     padding: 0 6%;
     height: 120px;
   }
-
   header.white {
     height: 80px;
   }
@@ -559,7 +557,6 @@ header.white .ham-menu .line {
 header .account-btn {
     display: flex;
   }
-
   .ham-menu {
     display: none;
   }
@@ -602,8 +599,7 @@ header .account-btn {
   font-weight: bold;
   display: inline-block;
   width: 1em;
-  margin-left: -1em;
-  /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
 .sbs-box .line {
   height: 5px;
@@ -669,11 +665,9 @@ header .account-btn {
     padding-top: 0;
     font-size: 2.3em;
   }
-
   .sbs.text-box {
     width: 400px;
   }
-
   .sbs-box.reverse {
     flex-direction: row-reverse;
   }
@@ -693,7 +687,7 @@ header .account-btn {
   right: 0;
   height: 100%;
   width: 0;
-  background-color: #3d3570f3;
+  background-color: rgba(61, 53, 112, 0.9529411765);
   z-index: 3;
   transition: 0.5s;
   overflow-x: hidden;
@@ -764,7 +758,7 @@ header .account-btn {
 }
 .content-box .desc {
   background-color: #3E70D5;
-  color: #f1f1f1;
+  color: rgb(241, 241, 241);
   padding: 1.5rem;
   font-size: 1.1em;
   border-radius: 8px;
@@ -879,7 +873,7 @@ header .account-btn {
 .front-content .desc {
   width: 100%;
   text-align: center;
-  color: #f1f1f1;
+  color: rgb(241, 241, 241);
   padding: 1.5rem;
   font-size: 1.1rem;
 }
@@ -888,19 +882,16 @@ header .account-btn {
   .landing-bg {
     padding: 0;
   }
-
   .landing-content {
     padding-left: 6%;
     padding-right: 6%;
   }
-
   .content-box {
     width: 60%;
   }
   .content-box .small-hide {
     display: block;
   }
-
   .user-box {
     display: block;
   }
@@ -1052,7 +1043,7 @@ header .account-btn {
   justify-content: center;
   align-items: center;
   background-color: #EB913E;
-  box-shadow: 0 30px 50px #C5CFE280;
+  box-shadow: 0 30px 50px rgba(197, 207, 226, 0.5019607843);
 }
 .mission.item .inner {
   height: 60.5px;
@@ -1091,11 +1082,9 @@ header .account-btn {
     flex-wrap: nowrap;
     align-items: unset;
   }
-
   .mission.item {
     padding-top: unset;
   }
-
   .mission.item.odd {
     padding-top: 70px;
   }
@@ -1126,7 +1115,7 @@ header .account-btn {
   position: relative;
   padding: 18px;
   margin: 0px 12px 50px;
-  box-shadow: 0 20px 60px #C5CFE280;
+  box-shadow: 0 20px 60px rgba(197, 207, 226, 0.5019607843);
   display: flex;
   flex-direction: column;
 }
@@ -1431,7 +1420,6 @@ body {
   .vision-item img {
     height: 340px;
   }
-
   .reverse {
     flex-direction: row-reverse;
   }
@@ -1732,7 +1720,6 @@ body {
   .join-hit .small-sc-title {
     display: none;
   }
-
   .visitors-box {
     display: flex;
   }
@@ -1753,7 +1740,7 @@ body {
 }
 
 .video-bg {
-  background-color: #242424;
+  background-color: rgb(36, 36, 36);
   height: 500px;
 }
 
