@@ -12,7 +12,9 @@
     <meta property="og:url" content="http://harnessintltalents.com">
     <meta property="og:title" content="Harness International Talent">
 
+    <link rel="stylesheet" href="sass/app.css">
     <link rel="stylesheet" href="sass/form.css">
+
     <link rel="shortcut icon" href="images/android-chrome-512x512.png" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,13 +26,14 @@
     <title>Harness International Talent Scholarship Form</title>
 </head>
 
-<body class="welcome">
-    <header class="scholarship-heading">
+<body class="">
+    <navigation-bar></navigation-bar>
+    <header class="welcome scholarship-heading">
         <img class="scholarship-heading-img" src="./images/scholarship-form.png" alt="Scholarship">
         <h1 class="scholarship-heading-text">Scholarship</h1>
     </header>
-    <main>
-        <form class="form" action="">
+    <main class="welcome">
+        <form class="details-form" action="">
             <section class="form-section">
                 <div class="input-box">
                     <label class="" for="firstname">First Name</label>
@@ -89,14 +92,24 @@
                     <input type="file" id="Reference">
                 </div>
                 <div class="input-box input-box_textarea">
-                    <label class="" for="questions">Scholarship questions </label>
+                    <label class="" for="questions">How will you promote HIT's mission and values? (250 words or
+                        less)</label>
                     <textarea name="questions" id="questions" cols="30" rows="10"></textarea>
-                    <p>(How will you promote HIT's mission and values?) 250 words or less</p>
+                    <!-- <p></p> -->
                 </div>
             </section>
-            <button class="form-btn submit-btn">Submit My Application</button>
+            <div class="form-buttons-wrapper">
+                <button class="form-btn submit-btn">Submit My Application</button>
+            </div>
         </form>
     </main>
+    <custom-footer></custom-footer>
+
+    <script src="./components/navbar.js"></script>
+    <script src="./components/footer.js"></script>
+    <script src="./script/base.js"></script>
+    <script src="./script/anim.js"></script>
+    <script src="./script/footer.js"></script>
 </body>
 
 </html>

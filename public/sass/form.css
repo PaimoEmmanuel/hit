@@ -6,21 +6,26 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+header .menu {
+  color: black;
+}
 .welcome {
-  padding-left: 80px;
-  padding-right: 80px;
+  padding: 0 80px;
   max-width: 1035px;
   margin: 0 auto;
 }
 .welcome-heading {
   text-align: center;
-  margin-top: 86px;
+  margin-top: 160px;
 }
 .welcome-heading h1 {
   font-size: 48px;
   font-weight: 700;
-  margin-bottom: 70px;
+  margin: 0 auto 70px;
+  border-bottom: 1px solid #f89318;
+  padding: 0 60px;
+  width: fit-content;
+  color: black;
 }
 .tab-headings {
   display: flex;
@@ -32,7 +37,7 @@
   gap: 14px;
   margin-bottom: 70px;
 }
-.form {
+.details-form {
   margin-bottom: 160px;
 }
 .form-section {
@@ -68,7 +73,7 @@
   border-radius: 8px;
   padding: 12px;
 }
-.input-box input[type="file"]{
+.input-box input[type="file"] {
   border-style: dotted;
 }
 .input-box textarea {
@@ -84,6 +89,11 @@
   height: 40px;
   border-radius: 8px;
   padding: 0 12px;
+}
+.form-buttons-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 .form-btn {
   background-color: #f89318;
@@ -101,10 +111,13 @@
 .submit-btn {
   width: 248px;
   height: 46px;
-  margin-left: 20%;
 }
 .scholarship-heading {
-  margin: 80px 0;
+  margin: 160px 0 0 80px;
+  padding: 0;
+  display: block;
+  position: relative;
+  height: 100%;
 }
 .scholarship-heading-img {
   display: block;

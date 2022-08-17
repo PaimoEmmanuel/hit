@@ -11,7 +11,8 @@
     <meta property="og:description" content="Knowledge is power, Information is liberating. Join us now">
     <meta property="og:url" content="http://harnessintltalents.com">
     <meta property="og:title" content="Harness International Talent">
-
+   
+    <link rel="stylesheet" href="sass/app.css">
     <link rel="stylesheet" href="sass/form.css">
     <link rel="shortcut icon" href="images/android-chrome-512x512.png" type="image/x-icon">
 
@@ -24,12 +25,13 @@
     <title>Welcome to Harness International Talent</title>
 </head>
 
-<body class="welcome">
-    <header class="welcome-heading">
+<body class="">
+    <navigation-bar></navigation-bar>
+    <div class="welcome-heading welcome">
         <img src="./images/welcome.png" alt="Welcome to HIT">
         <h1>Welcome to HIT</h1>
-    </header>
-    <main>
+    </div>
+    <main class="welcome">
         <div class="tab-headings">
             <h3>
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -48,7 +50,7 @@
                 Contact Information
             </h3>
         </div>
-        <form class="form" action="">
+        <form class="details-form" action="">
             <section class="form-section">
                 <div class="input-box">
                     <label class="" for="firstname">First Name</label>
@@ -101,15 +103,23 @@
                     <textarea name="address" id="address" cols="30" rows="10"></textarea>
                 </div>
             </section>
-            <button class="form-btn next-btn">Next</button>
-            <button class="form-btn back-btn form-section-2">Back</button>
-            <button class="form-btn submit-btn form-section-2">Submit Partnership Form</button>
+            <div class="form-buttons-wrapper">
+                <button class="form-btn back-btn form-section-2">Back</button>
+                <button class="form-btn next-btn">Next</button>
+                <button class="form-btn submit-btn form-section-2">Submit Partnership Form</button>
+            </div>
             <section class="contact">
 
             </section>
         </form>
     </main>
+    <custom-footer></custom-footer>
+    <script src="./components/navbar.js"></script>
+    <script src="./components/footer.js"></script>
     <script src="./script/welcome.js"></script>
+    <script src="./script/base.js"></script>
+    <script src="./script/anim.js"></script>
+    <script src="./script/footer.js"></script>
 </body>
 
 </html>
