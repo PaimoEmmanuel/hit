@@ -109,10 +109,11 @@ header.white {
 
 @media (min-width: 1150px) {
     header {
-        padding: 0 9%;
+        padding: 0 7%;
         .menu-row,
         .account-btn {
             display: flex;
+            align-items: center;
         }
     }
 

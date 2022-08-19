@@ -25,6 +25,8 @@ class Navbar extends HTMLElement {
               <div>Contact Us</div>
               <div class="hover-line"></div>
           </a>
+          <a href="welcome.html" class="btn solid space">Get Started</a>
+
 
       </div>
       <!-- <div class="search"></div> 

@@ -31,7 +31,8 @@
   }
 
   .types {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     div {
       background-color: abs.$types-blue;
       padding: 0.9rem 1.7rem;
@@ -185,7 +186,7 @@
 
 @media (min-width: 1100px) {
   .landing-content {
-    padding-left: 13%;
-    padding-right: 13%;
+    padding-left: 7%;
+    padding-right: 7%;
   }
 }

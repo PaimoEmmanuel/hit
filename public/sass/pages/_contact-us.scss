@@ -57,6 +57,15 @@
         margin-right: 18px;
       }
     }
+    a {
+      display: flex;
+      align-items: center;
+      color: #f89318;
+      text-decoration: none;
+      svg {
+        margin-right: 18px;
+      }
+    }
   }
 }
 .form {

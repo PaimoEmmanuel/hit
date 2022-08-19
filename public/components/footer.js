@@ -19,7 +19,7 @@ class Footer extends HTMLElement {
         <div class="footer-box two">
             <ul class="footer-menu-list">
                 <li><a href="about_us.html">About us</a></li>
-                <li><a href="">Become a partner</a></li>
+                <li><a href="partner.html">Become a partner</a></li>
                 <li><a href="scholarship.html">Apply for Scholarships</a></li>
                 <li><a href="events.html">News and Events</a></li>
                 <li><a href="contact-us.html">Contact us</a></li>
@@ -46,7 +46,7 @@ class Footer extends HTMLElement {
                 <div class="icon-text">
                     <img src="images/footer/mail.png" alt="" class="icon">
                     <div class="w-16"></div>
-                    <div class="text">support@HIT.com</div>
+                    <a href="mailto:support@harnessintltalents.com" class="text">support@harnessintltalents.com</a>
                 </div>
                 <div class="h-24"></div>
                 <div class="social-icons">

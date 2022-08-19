@@ -75,8 +75,8 @@ h1 {
 
 @media (min-width: 1100px) {
   .general-margin {
-    padding-left: 13%;
-    padding-right: 13%;
+    padding-left: 7%;
+    padding-right: 7%;
   }
 }
 .dbg {
@@ -261,6 +261,7 @@ h1 {
   border-radius: 300px;
   border: 0;
   font-weight: 600;
+  text-decoration: none;
 }
 
 .btn-no-radius {
@@ -412,7 +413,8 @@ footer {
   align-items: flex-end;
 }
 .footer-box.three .text {
-  color: #847C93;
+  color: white;
+  text-decoration: none;
 }
 
 .footer-box.two li {
@@ -551,11 +553,12 @@ header.white .ham-menu .line {
 }
 @media (min-width: 1150px) {
   header {
-    padding: 0 9%;
+    padding: 0 7%;
   }
   header .menu-row,
 header .account-btn {
     display: flex;
+    align-items: center;
   }
   .ham-menu {
     display: none;

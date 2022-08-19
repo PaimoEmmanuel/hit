@@ -113,7 +113,8 @@ header .menu {
   height: 46px;
 }
 .scholarship-heading {
-  margin: 160px 0 0 80px;
+  margin-top: 160px;
+  margin-bottom: 80px;
   padding: 0;
   display: block;
   position: relative;
