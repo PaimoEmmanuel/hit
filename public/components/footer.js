@@ -30,12 +30,7 @@ class Footer extends HTMLElement {
             <div class="connect-holder">
                 <div class="connect-text em1-4 bold-txt">Connect with HIT</div>
                 <div class="h-24"></div>
-                <div class="icon-text">
-                    <img src="images/footer/locate.png" alt="" class="icon">
-                    <div class="w-16"></div>
-                    <div class="text">10000 North Eldridge Pkwy Houston, Texas(TX) 77065
-                    </div>
-                </div>
+                
                 <div class="h-16"></div>
                 <div class="icon-text">
                     <img src="images/footer/call.png" alt="" class="icon">

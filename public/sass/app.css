@@ -950,15 +950,16 @@ header .account-btn {
 .subscribe-box .input-box {
   display: flex;
   text-align: center;
-  min-width: 100%;
-  max-width: 860px;
-  justify-content: space-between;
+  width: 840px;
+  justify-content: center;
   align-items: center;
   position: relative;
+  gap: 3rem;
 }
 @media (max-width: 900px) {
   .subscribe-box .input-box {
     flex-direction: column;
+    width: 100%;
   }
 }
 .subscribe-box .input-box svg {

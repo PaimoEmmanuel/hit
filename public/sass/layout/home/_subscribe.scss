@@ -31,13 +31,14 @@
   .input-box {
     display: flex;
     text-align: center;
-    min-width: 100%;
-    max-width: 860px;
-    justify-content: space-between;
+    width: 840px;
+    justify-content: center;
     align-items: center;
     position: relative;
+    gap: 3rem;
     @media (max-width: 900px) {
       flex-direction: column;
+      width: 100%;
     }
     & svg {
       position: absolute;
